@@ -48,7 +48,7 @@ function validateForm() {
   }
 
   let xhttpReq = new XMLHttpRequest();
-  xhttpReq.open('POST', '/');
+  xhttpReq.open('POST', 'https://itsrkator-962v.onrender.com/');
   xhttpReq.setRequestHeader('content-type', 'application/json');
   xhttpReq.onload = function () {
     console.log("Form Data: ", formData, "\nResponse Text: ", xhttpReq.responseText);
