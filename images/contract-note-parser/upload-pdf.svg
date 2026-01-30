@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none" role="img" aria-labelledby="upload-title upload-desc">
+  <title id="upload-title">Upload files – Contract note parser</title>
+  <desc id="upload-desc">Drag and drop or browse to upload contract note PDF files.</desc>
+  <defs>
+    <filter id="cnshadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <!-- MUI Cancel icon (Material Design): circle with X -->
+    <symbol id="iconCancel" viewBox="0 0 24 24">
+      <path fill="#ef4444" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"/>
+    </symbol>
+  </defs>
+  <rect width="400" height="280" rx="10" fill="#f8fafc"/>
+  <!-- Header: 40px, 16px side margin for content, close right-aligned -->
+  <rect x="0" y="0" width="400" height="40" rx="10" fill="white" filter="url(#cnshadow)"/>
+  <text x="200" y="20" text-anchor="middle" dominant-baseline="middle" fill="#0f172a" font-size="11" font-weight="600" font-family="Inter, system-ui, -apple-system, sans-serif" letter-spacing="0.02em">Upload files</text>
+  <use href="#iconCancel" x="370" y="10" width="20" height="20"/>
+  <!-- Drop zone: 16px margin all sides -->
+  <rect x="16" y="56" width="368" height="208" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="8 6" filter="url(#cnshadow)"/>
+  <!-- Content: icon box and text smaller -->
+  <rect x="172" y="76" width="56" height="56" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <path fill="#cbd5e1" d="M200 80l5 1.5v1.5h-10V80l5 0z"/>
+  <text x="200" y="108" text-anchor="middle" font-size="8" font-weight="600" fill="#64748b" font-family="Inter, system-ui, sans-serif">PDF</text>
+  <path d="M200 136l-3.5 4h7l-3.5-4z" fill="#3b82f6" stroke="#2563eb" stroke-width="0.5" stroke-linejoin="round"/>
+  <text x="200" y="166" text-anchor="middle" dominant-baseline="middle" fill="#0f172a" font-size="10" font-weight="700" font-family="Inter, system-ui, sans-serif">Drag &amp; Drop</text>
+  <text x="200" y="182" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="Inter, system-ui, sans-serif">Drop your file here or</text>
+  <rect x="164" y="198" width="72" height="24" rx="5" fill="#3b82f6"/>
+  <text x="200" y="210" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="9" font-weight="600" font-family="Inter, system-ui, sans-serif">Browse</text>
+  <text x="200" y="246" text-anchor="middle" dominant-baseline="middle" fill="#94a3b8" font-size="8" font-family="Inter, system-ui, sans-serif">Only PDF files (contract notes)</text>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none" role="img" aria-labelledby="family-dash-title family-dash-desc">
+  <title id="family-dash-title">FamO Money — Family dashboard</title>
+  <desc id="family-dash-desc">Unified dashboard for families to manage assets and investments across multiple companies and asset classes: portfolio value, allocation, and real-time P&amp;L.</desc>
+  <defs>
+    <filter id="fshadowFam" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="fgradFam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="280" rx="10" fill="#f8fafc"/>
+  <!-- Header: 44px, 16px padding; title left, + Add right -->
+  <rect x="0" y="0" width="400" height="44" rx="10" fill="white" filter="url(#fshadowFam)"/>
+  <text x="24" y="22" dominant-baseline="middle" fill="#0f172a" font-size="12" font-weight="600" font-family="Inter, system-ui, -apple-system, sans-serif" letter-spacing="0.02em">FamO Money</text>
+  <rect x="304" y="10" width="72" height="24" rx="6" fill="url(#fgradFam)"/>
+  <text x="340" y="22" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="9" font-weight="600" font-family="Inter, system-ui, sans-serif">+ Add</text>
+  <!-- Portfolio value card: 24px margin, 8px below header -->
+  <rect x="24" y="52" width="352" height="80" rx="8" fill="white" filter="url(#fshadowFam)" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="40" y="72" dominant-baseline="middle" fill="#64748b" font-size="8" font-family="Inter, system-ui, sans-serif">Family portfolio · Across companies</text>
+  <text x="40" y="96" dominant-baseline="middle" fill="#1e293b" font-size="20" font-weight="700" font-family="Inter, system-ui, sans-serif">₹ 24,80,000</text>
+  <text x="40" y="114" dominant-baseline="middle" fill="#22c55e" font-size="9" font-weight="500" font-family="Inter, system-ui, sans-serif">+ 12.4% this month</text>
+  <!-- Allocation card: 8px below portfolio card -->
+  <rect x="24" y="140" width="168" height="124" rx="8" fill="white" filter="url(#fshadowFam)" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="40" y="160" dominant-baseline="middle" fill="#1e293b" font-size="10" font-weight="600" font-family="Inter, system-ui, sans-serif">Asset allocation</text>
+  <rect x="40" y="172" width="68" height="20" rx="4" fill="#dbeafe"/>
+  <text x="74" y="182" text-anchor="middle" dominant-baseline="middle" fill="#1e40af" font-size="8" font-family="Inter, system-ui, sans-serif">MF 42%</text>
+  <rect x="116" y="172" width="68" height="20" rx="4" fill="#dcfce7"/>
+  <text x="150" y="182" text-anchor="middle" dominant-baseline="middle" fill="#15803d" font-size="8" font-family="Inter, system-ui, sans-serif">Equity 28%</text>
+  <rect x="40" y="198" width="68" height="20" rx="4" fill="#fef3c7"/>
+  <text x="74" y="208" text-anchor="middle" dominant-baseline="middle" fill="#92400e" font-size="8" font-family="Inter, system-ui, sans-serif">Gold 15%</text>
+  <rect x="116" y="198" width="68" height="20" rx="4" fill="#e2e8f0"/>
+  <text x="150" y="208" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="8" font-family="Inter, system-ui, sans-serif">Other 15%</text>
+  <rect x="40" y="224" width="144" height="20" rx="4" fill="#f0fdf4"/>
+  <text x="112" y="234" text-anchor="middle" dominant-baseline="middle" fill="#166534" font-size="8" font-family="Inter, system-ui, sans-serif">Companies · PE · Real estate</text>
+  <!-- P&amp;L card -->
+  <rect x="208" y="140" width="168" height="124" rx="8" fill="white" filter="url(#fshadowFam)" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="224" y="160" dominant-baseline="middle" fill="#1e293b" font-size="10" font-weight="600" font-family="Inter, system-ui, sans-serif">P&amp;L · Real-time</text>
+  <!-- Chart area: realistic P&amp;L sparkline — upward trend with natural volatility -->
+  <rect x="224" y="168" width="136" height="56" rx="4" fill="#f8fafc"/>
+  <path d="M224 208 L236 198 L248 192 L260 200 L272 188 L284 196 L296 184 L308 192 L320 182 L332 190 L344 186 L356 180 L360 178 L360 224 L224 224 Z" fill="url(#fgradFam)" fill-opacity="0.15"/>
+  <polyline points="224,208 236,198 248,192 260,200 272,188 284,196 296,184 308,192 320,182 332,190 344,186 356,180 360,178" fill="none" stroke="#059669" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="224" y="248" dominant-baseline="middle" fill="#64748b" font-size="8" font-family="Inter, system-ui, sans-serif">Live across entities · Market APIs</text>
+</svg>

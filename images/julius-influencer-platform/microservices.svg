@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1400" viewBox="0 0 1800 1400" role="img" aria-label="Microservice architecture diagram">
+  <defs>
+    <style>
+      .title { font: 700 26px/1.2 Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 500 14px/1.4 Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; fill: #334155; }
+      .groupTitle { font: 700 14px/1.2 Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; fill: #0f172a; }
+      .boxTitle { font: 700 14px/1.2 Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; fill: #0f172a; }
+      .boxText { font: 500 12px/1.2 Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; fill: #334155; }
+      .small { font: 500 11px/1.2 Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; fill: #475569; }
+      .mono { font: 500 11px/1.2 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; fill: #334155; }
+
+      /* Use white backgrounds for max readability across viewers/themes */
+      .panel { fill: #ffffff; stroke: #e2e8f0; stroke-width: 1.25; rx: 16; }
+      .panelAlt { fill: #ffffff; stroke: #e2e8f0; stroke-width: 1.25; rx: 16; }
+      .svc { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.25; rx: 14; }
+      .infra { fill: #ffffff; stroke: #94a3b8; stroke-width: 1.25; rx: 14; }
+      .external { fill: #fff7ed; stroke: #fdba74; stroke-width: 1.25; rx: 14; }
+      .chip { fill: #e2e8f0; rx: 10; }
+
+      /* Arrow colors by type */
+      .arrow { stroke: #2563eb; stroke-width: 1.8; fill: none; marker-end: url(#arrowHttp); }         /* HTTP/GraphQL */
+      .arrowSoft { stroke: #7c3aed; stroke-width: 1.6; fill: none; marker-end: url(#arrowQueue); }     /* Queue / broker */
+      .arrowDashed { stroke: #f59e0b; stroke-width: 1.6; fill: none; stroke-dasharray: 7 6; marker-end: url(#arrowExternal); } /* External dep */
+      .label { font: 600 11px/1.2 Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; fill: #0f172a; }
+    </style>
+
+    <marker id="arrowHttp" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowQueue" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrowExternal" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/>
+    </marker>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- Explicit white page background (prevents transparency issues) -->
+  <rect x="0" y="0" width="1800" height="1400" fill="#ffffff"/>
+
+  <!-- Header -->
+  <rect x="24" y="24" width="1752" height="110" class="panel" filter="url(#shadow)"/>
+  <text x="900" y="72" text-anchor="middle" class="title">Microservices architecture</text>
+
+  <!-- Panels -->
+  <rect x="24" y="160" width="520" height="700" class="panel"/>
+  <text x="56" y="194" class="groupTitle">Clients / Frontends</text>
+
+  <rect x="24" y="900" width="1752" height="320" class="panelAlt"/>
+  <text x="56" y="930" class="groupTitle">Infrastructure &amp; Shared Dependencies</text>
+
+  <rect x="568" y="160" width="1208" height="700" class="panel"/>
+  <text x="600" y="194" class="groupTitle">Backend services (microservices)</text>
+
+  <!-- Client boxes -->
+  <rect x="64" y="230" width="440" height="96" class="svc" filter="url(#shadow)"/>
+  <text x="92" y="264" class="boxTitle">web</text>
+  <text x="92" y="290" class="boxText">Legacy web UI (calls core API)</text>
+
+  <rect x="64" y="370" width="440" height="96" class="svc" filter="url(#shadow)"/>
+  <text x="92" y="404" class="boxTitle">admin</text>
+  <text x="92" y="430" class="boxText">Admin UI (calls core API)</text>
+
+  <rect x="64" y="510" width="440" height="112" class="svc" filter="url(#shadow)"/>
+  <text x="92" y="544" class="boxTitle">marketer-hub</text>
+  <text x="92" y="570" class="boxText">Marketer UI (reporting via GraphQL)</text>
+
+  <rect x="64" y="670" width="440" height="112" class="svc" filter="url(#shadow)"/>
+  <text x="92" y="704" class="boxTitle">web-instagram-stories</text>
+  <text x="92" y="730" class="boxText">Stories UI (calls Social Content API)</text>
+
+  <!-- Service boxes (microservices) -->
+  <rect x="592" y="230" width="560" height="124" class="svc" filter="url(#shadow)"/>
+  <text x="620" y="264" class="boxTitle">Core API</text>
+  <text x="620" y="290" class="boxText">REST API + workers (queue consumers / schedulers)</text>
+
+  <rect x="1184" y="230" width="560" height="124" class="svc" filter="url(#shadow)"/>
+  <text x="1212" y="264" class="boxTitle">Social API</text>
+  <text x="1212" y="290" class="boxText">REST API + workers (social platforms ingestion/indexing)</text>
+
+  <rect x="592" y="390" width="560" height="136" class="svc" filter="url(#shadow)"/>
+  <text x="620" y="424" class="boxTitle">api-reporting-graphql</text>
+  <text x="620" y="450" class="boxText">GraphQL reporting API (aggregates data from core + social)</text>
+
+  <rect x="1184" y="390" width="560" height="136" class="svc" filter="url(#shadow)"/>
+  <text x="1212" y="424" class="boxTitle">api-social-content</text>
+  <text x="1212" y="450" class="boxText">Social Content API (DynamoDB-backed content + search endpoints)</text>
+
+  <rect x="592" y="570" width="1152" height="220" class="svc" filter="url(#shadow)"/>
+  <text x="620" y="604" class="boxTitle">instagram-platform</text>
+  <text x="620" y="630" class="boxText">Instagram scraping/collection worker (publishes account stream + calls Social Content API)</text>
+
+  <!-- Infrastructure boxes -->
+  <rect x="64" y="980" width="320" height="88" class="infra" filter="url(#shadow)"/>
+  <text x="92" y="1014" class="boxTitle">RabbitMQ</text>
+  <text x="92" y="1040" class="boxText">Shared message broker</text>
+
+  <rect x="408" y="980" width="280" height="88" class="infra" filter="url(#shadow)"/>
+  <text x="436" y="1014" class="boxTitle">Redis</text>
+  <text x="436" y="1040" class="boxText">Cache / session / jobs</text>
+
+  <rect x="712" y="980" width="332" height="88" class="external" filter="url(#shadow)"/>
+  <text x="740" y="1014" class="boxTitle">MySQL</text>
+  <text x="740" y="1040" class="boxText">Core + Social databases</text>
+
+  <rect x="1068" y="980" width="332" height="88" class="external" filter="url(#shadow)"/>
+  <text x="1096" y="1014" class="boxTitle">Elasticsearch</text>
+  <text x="1096" y="1040" class="boxText">Search</text>
+
+  <rect x="1424" y="980" width="320" height="88" class="infra" filter="url(#shadow)"/>
+  <text x="1452" y="1014" class="boxTitle">DynamoDB</text>
+  <text x="1452" y="1040" class="boxText">Social content storage</text>
+
+  <rect x="64" y="1098" width="320" height="88" class="infra" filter="url(#shadow)"/>
+  <text x="92" y="1132" class="boxTitle">Beanstalkd</text>
+  <text x="92" y="1158" class="boxText">Job queue (used by Core API)</text>
+
+  <!-- Legend (separate section, outside Infrastructure) -->
+  <rect x="24" y="1240" width="1752" height="120" class="panel"/>
+  <text x="56" y="1276" class="groupTitle">Legend</text>
+  <path d="M 56 1310 L 150 1310" class="arrow"/>
+  <text x="164" y="1314" class="small">HTTP/GraphQL call</text>
+  <path d="M 380 1310 L 474 1310" class="arrowSoft"/>
+  <text x="488" y="1314" class="small">Queue / broker connection</text>
+  <path d="M 750 1310 L 844 1310" class="arrowDashed"/>
+  <text x="858" y="1314" class="small">External managed dependency</text>
+
+  <!-- Inter-service arrows -->
+  <!-- Clients to services -->
+  <path d="M 504 278 C 560 278, 560 292, 592 292" class="arrow"/>
+  <text x="536" y="264" class="label">HTTP</text>
+
+  <path d="M 504 418 C 560 418, 560 330, 592 292" class="arrow"/>
+  <text x="536" y="390" class="label">HTTP</text>
+
+  <path d="M 504 566 C 560 566, 560 520, 592 458" class="arrow"/>
+  <text x="536" y="540" class="label">GraphQL</text>
+
+  <path d="M 504 726 C 900 726, 1040 600, 1184 458" class="arrow"/>
+  <text x="740" y="708" class="label">HTTP</text>
+
+  <!-- Service-to-service -->
+  <!-- reporting-graphql -> api and social-api -->
+  <path d="M 872 390 C 872 378, 872 366, 872 354" class="arrow"/>
+  <text x="886" y="380" class="label">HTTP</text>
+
+  <path d="M 1152 458 C 1240 380, 1260 330, 1184 292" class="arrow"/>
+  <text x="1204" y="388" class="label">HTTP</text>
+
+  <!-- api <-> social-api -->
+  <path d="M 1152 292 C 1164 292, 1172 292, 1184 292" class="arrow"/>
+  <text x="1160" y="276" class="label">HTTP</text>
+  <path d="M 1184 316 C 1172 316, 1164 316, 1152 316" class="arrow"/>
+  <text x="1160" y="334" class="label">HTTP</text>
+
+  <!-- api-social-content -> social-api -->
+  <path d="M 1464 390 C 1464 378, 1464 366, 1464 354" class="arrow"/>
+  <text x="1478" y="380" class="label">HTTP</text>
+
+  <!-- instagram-platform -> api-social-content -->
+  <path d="M 1744 682 C 1770 650, 1770 590, 1748 524" class="arrow"/>
+  <text x="1240" y="560" class="label">HTTP</text>
+
+  <!-- instagram-platform -> rabbitmq -->
+  <path d="M 892 790 C 892 940, 340 940, 150 980" class="arrowSoft"/>
+  <text x="560" y="960" class="label">AMQP</text>
+
+  <!-- api + social + graphql to infra -->
+  <path d="M 900 354 C 900 940, 320 940, 220 980" class="arrowSoft"/>
+  <text x="560" y="944" class="label">AMQP</text>
+
+  <path d="M 1528 354 C 1528 940, 380 940, 290 980" class="arrowSoft"/>
+  <text x="1070" y="960" class="label">AMQP</text>
+
+  <path d="M 892 526 C 892 940, 600 940, 548 980" class="arrowSoft"/>
+  <text x="740" y="960" class="label">Redis</text>
+
+  <path d="M 848 354 C 848 1110, 320 1110, 200 1098" class="arrowSoft"/>
+  <text x="560" y="1106" class="label">Beanstalkd jobs</text>
+
+  <path d="M 760 354 C 760 940, 820 940, 820 980" class="arrowDashed"/>
+  <text x="830" y="944" class="label">MySQL</text>
+
+  <path d="M 1560 354 C 1560 940, 960 940, 960 980" class="arrowDashed"/>
+  <text x="970" y="960" class="label">MySQL</text>
+
+  <path d="M 980 342 C 980 940, 1188 940, 1188 980" class="arrowDashed"/>
+  <text x="1168" y="944" class="label">Elasticsearch</text>
+
+  <path d="M 1520 342 C 1520 940, 1288 940, 1288 980" class="arrowDashed"/>
+  <text x="1298" y="960" class="label">Elasticsearch</text>
+
+  <path d="M 1484 526 C 1484 940, 1600 940, 1600 980" class="arrowSoft"/>
+  <text x="1428" y="944" class="label">AWS SDK (DynamoDB)</text>
+
+</svg>

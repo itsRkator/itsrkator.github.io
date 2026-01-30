@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none" role="img" aria-labelledby="extracted-fields-title extracted-fields-desc" overflow="hidden">
+  <title id="extracted-fields-title">Extracted invoice data</title>
+  <desc id="extracted-fields-desc">Extracted invoice fields: vendor, date, line items. Diverse formats with Angular and Flask.</desc>
+  <defs>
+    <filter id="extractedFieldsShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <!-- Vertical: 8px gap header→card; card height 208; 12px gap card→viewBox bottom. -->
+  <rect width="400" height="280" rx="10" fill="#f8fafc"/>
+  <rect x="0" y="0" width="400" height="44" rx="10" fill="white" filter="url(#extractedFieldsShadow)"/>
+  <text x="200" y="22" text-anchor="middle" dominant-baseline="middle" fill="#0f172a" font-size="12" font-weight="600" font-family="Inter, system-ui, -apple-system, sans-serif" letter-spacing="0.02em">Extracted invoice data</text>
+
+  <!-- Card: 8px below header (52), height 208, ends at 260; 20px gap to viewBox bottom (280) -->
+  <rect x="32" y="52" width="336" height="208" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1" filter="url(#extractedFieldsShadow)"/>
+  <!-- Content: subtitle 66, 8px space below → Vendor row 82 -->
+  <text x="48" y="66" dominant-baseline="middle" fill="#64748b" font-size="11" font-family="Inter, system-ui, sans-serif">Diverse invoice formats · Angular + Flask</text>
+
+  <!-- 8px gap → Vendor row 82–118 -->
+  <rect x="48" y="82" width="144" height="36" rx="4" fill="#f8fafc"/>
+  <text x="64" y="96" dominant-baseline="middle" fill="#64748b" font-size="11" font-weight="500" font-family="Inter, system-ui, sans-serif">Vendor</text>
+  <text x="64" y="108" dominant-baseline="middle" fill="#1e293b" font-size="11" font-family="Inter, system-ui, sans-serif">Acme Corp Ltd</text>
+  <rect x="208" y="82" width="144" height="36" rx="4" fill="#f8fafc"/>
+  <text x="224" y="96" dominant-baseline="middle" fill="#64748b" font-size="11" font-weight="500" font-family="Inter, system-ui, sans-serif">Invoice date</text>
+  <text x="224" y="108" dominant-baseline="middle" fill="#1e293b" font-size="11" font-family="Inter, system-ui, sans-serif">15-Jan-2024</text>
+
+  <!-- 8px gap → Table header 126–158 -->
+  <rect x="48" y="126" width="304" height="32" rx="4" fill="#1e293b"/>
+  <text x="64" y="142" dominant-baseline="middle" fill="#94a3b8" font-size="10" font-family="Inter, system-ui, sans-serif">Description</text>
+  <text x="200" y="142" text-anchor="middle" dominant-baseline="middle" fill="#94a3b8" font-size="10" font-family="Inter, system-ui, sans-serif">Qty</text>
+  <text x="301" y="142" text-anchor="middle" dominant-baseline="middle" fill="#94a3b8" font-size="10" font-family="Inter, system-ui, sans-serif">Amount</text>
+
+  <!-- 8px gap → Data row 1: 166–194 -->
+  <rect x="48" y="166" width="304" height="28" rx="4" fill="#f8fafc"/>
+  <text x="64" y="181" dominant-baseline="middle" fill="#1e293b" font-size="11" font-family="Inter, system-ui, sans-serif">Service fee</text>
+  <text x="200" y="181" text-anchor="middle" dominant-baseline="middle" fill="#1e293b" font-size="11" font-family="Inter, system-ui, sans-serif">1</text>
+  <text x="301" y="181" text-anchor="middle" dominant-baseline="middle" fill="#1e293b" font-size="11" font-family="Inter, system-ui, sans-serif">$1,200.00</text>
+
+  <!-- 8px gap → Data row 2: 198–226 -->
+  <rect x="48" y="198" width="304" height="28" rx="4" fill="white"/>
+  <text x="64" y="213" dominant-baseline="middle" fill="#1e293b" font-size="11" font-family="Inter, system-ui, sans-serif">Consulting</text>
+  <text x="200" y="213" text-anchor="middle" dominant-baseline="middle" fill="#1e293b" font-size="11" font-family="Inter, system-ui, sans-serif">2</text>
+  <text x="301" y="213" text-anchor="middle" dominant-baseline="middle" fill="#1e293b" font-size="11" font-family="Inter, system-ui, sans-serif">$3,400.00</text>
+
+  <!-- 8px gap → Total row 234–254 (6px above card bottom) -->
+  <rect x="48" y="234" width="304" height="20" rx="4" fill="#dcfce7"/>
+  <text x="340" y="244" text-anchor="end" dominant-baseline="middle" fill="#15803d" font-size="11" font-weight="600" font-family="Inter, system-ui, sans-serif">Total: $4,600.00</text>
+</svg>

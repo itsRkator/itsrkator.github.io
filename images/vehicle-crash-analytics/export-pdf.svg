@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <defs>
+    <filter id="vca-export-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <!-- Page: 24px margin -->
+  <rect width="400" height="280" rx="10" fill="#f8fafc"/>
+  <!-- Header: 48px height, 24px padding -->
+  <rect x="0" y="0" width="400" height="48" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1" filter="url(#vca-export-shadow)"/>
+  <text x="24" y="32" fill="#1e293b" font-size="12" font-weight="600" font-family="system-ui, sans-serif">Export to PDF</text>
+  <!-- Main card: 24px margin, 16px padding inside (content 40–360) -->
+  <rect x="24" y="56" width="352" height="208" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1" filter="url(#vca-export-shadow)"/>
+  <!-- Report title -->
+  <rect x="40" y="72" width="320" height="28" rx="4" fill="#fef2f2"/>
+  <text x="200" y="88" text-anchor="middle" dominant-baseline="middle" fill="#b91c1c" font-size="11" font-weight="600" font-family="system-ui, sans-serif">Vehicle Crash Analytics — Report</text>
+  <!-- Report meta: labels + values -->
+  <text x="40" y="118" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">Report date:</text>
+  <text x="120" y="118" dominant-baseline="middle" fill="#1e293b" font-size="9" font-family="system-ui, sans-serif">30 Jan 2024</text>
+  <text x="40" y="134" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">Period:</text>
+  <text x="120" y="134" dominant-baseline="middle" fill="#1e293b" font-size="9" font-family="system-ui, sans-serif">Last 30 days</text>
+  <text x="40" y="150" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">Summary:</text>
+  <text x="120" y="150" dominant-baseline="middle" fill="#1e293b" font-size="9" font-family="system-ui, sans-serif">248 crashes · High 42, Med 156, Low 50</text>
+  <!-- Table: header + one row; columns ID(56) Date(130) Region(190) Severity(258) Vehicles(324) -->
+  <rect x="40" y="160" width="320" height="26" rx="4" fill="#f1f5f9"/>
+  <text x="56" y="173" dominant-baseline="middle" fill="#64748b" font-size="9" font-weight="600" font-family="system-ui, sans-serif">ID</text>
+  <text x="130" y="173" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-weight="600" font-family="system-ui, sans-serif">Date</text>
+  <text x="190" y="173" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-weight="600" font-family="system-ui, sans-serif">Region</text>
+  <text x="258" y="173" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-weight="600" font-family="system-ui, sans-serif">Severity</text>
+  <text x="324" y="173" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-weight="600" font-family="system-ui, sans-serif">Vehicles</text>
+  <rect x="40" y="190" width="320" height="26" rx="4" fill="#f8fafc"/>
+  <text x="56" y="203" dominant-baseline="middle" fill="#1e293b" font-size="9" font-family="system-ui, sans-serif">CR-001</text>
+  <text x="130" y="203" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">12-Jan-24</text>
+  <text x="190" y="203" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">North</text>
+  <rect x="236" y="197" width="44" height="18" rx="4" fill="#fef2f2"/>
+  <text x="258" y="206" text-anchor="middle" dominant-baseline="middle" fill="#b91c1c" font-size="8" font-weight="500" font-family="system-ui, sans-serif">High</text>
+  <text x="324" y="203" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">2</text>
+  <!-- Footer: placeholder status -->
+  <rect x="40" y="220" width="320" height="32" rx="4" fill="#f1f5f9"/>
+  <text x="200" y="236" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">Generated · Download PDF</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none" role="img" aria-labelledby="validation-title validation-desc">
+  <title id="validation-title">Validation before persist</title>
+  <desc id="validation-desc">Checks before saving: trade date format, quantity and price match; brokerage mismatch flagged for review.</desc>
+  <defs>
+    <filter id="cnshadowVal" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="400" height="280" rx="10" fill="#f8fafc"/>
+  <rect x="0" y="0" width="400" height="44" rx="10" fill="white" filter="url(#cnshadowVal)"/>
+  <text x="200" y="22" text-anchor="middle" dominant-baseline="middle" fill="#0f172a" font-size="12" font-weight="600" font-family="Inter, system-ui, -apple-system, sans-serif" letter-spacing="0.02em">Validation before persist</text>
+  <rect x="24" y="52" width="352" height="212" rx="8" fill="white" filter="url(#cnshadowVal)" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="200" y="74" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="Inter, system-ui, -apple-system, sans-serif">Checks before saving to DB</text>
+  <rect x="40" y="88" width="320" height="38" rx="6" fill="#f0fdf4"/>
+  <circle cx="66" cy="107" r="8" fill="#22c55e"/>
+  <path d="M62 107l2.5 2.5 5-5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="86" y="100" dominant-baseline="middle" fill="#166534" font-size="9" font-weight="600" font-family="Inter, system-ui, sans-serif">Trade date format valid</text>
+  <text x="86" y="113" dominant-baseline="middle" fill="#64748b" font-size="8" font-family="Inter, system-ui, sans-serif">15-Jan-2024</text>
+  <rect x="40" y="134" width="320" height="38" rx="6" fill="#f0fdf4"/>
+  <circle cx="66" cy="153" r="8" fill="#22c55e"/>
+  <path d="M62 153l2.5 2.5 5-5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="86" y="146" dominant-baseline="middle" fill="#166534" font-size="9" font-weight="600" font-family="Inter, system-ui, sans-serif">Quantity &amp; price match</text>
+  <text x="86" y="159" dominant-baseline="middle" fill="#64748b" font-size="8" font-family="Inter, system-ui, sans-serif">Qty: 10, Price: 2,450.00</text>
+  <rect x="40" y="180" width="320" height="38" rx="6" fill="#fef2f2"/>
+  <circle cx="66" cy="199" r="8" fill="#ef4444"/>
+  <path d="M62 195l8 8M70 195l-8 8" stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <text x="86" y="193" dominant-baseline="middle" fill="#991b1b" font-size="9" font-weight="600" font-family="Inter, system-ui, sans-serif">Brokerage mismatch</text>
+  <text x="86" y="206" dominant-baseline="middle" fill="#64748b" font-size="8" font-family="Inter, system-ui, sans-serif">Expected 12.50, got 12.00 — review required</text>
+  <rect x="256" y="228" width="88" height="28" rx="6" fill="#2563eb"/>
+  <text x="300" y="242" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="9" font-weight="600" font-family="Inter, system-ui, sans-serif">Fix &amp; save</text>
+</svg>

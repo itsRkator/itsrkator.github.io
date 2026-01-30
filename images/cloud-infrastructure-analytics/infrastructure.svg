@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <defs>
+    <filter id="gshadow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrowInfra" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#94a3b8"/>
+    </marker>
+    <marker id="arrowInfraGreen" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#22c55e"/>
+    </marker>
+    <!-- BigQuery: official Google icon (Icon_24px_BigQuery_Color) -->
+    <symbol id="bigQueryIcon" viewBox="0 0 24 24">
+      <path fill="#aecbfa" fill-rule="evenodd" d="M6.73,10.83v2.63A4.91,4.91,0,0,0,8.44,15.2V10.83Z"/>
+      <path fill="#669df6" fill-rule="evenodd" d="M9.89,8.41v7.53A7.62,7.62,0,0,0,11,16,8,8,0,0,0,12,16V8.41Z"/>
+      <path fill="#aecbfa" fill-rule="evenodd" d="M13.64,11.86v3.29a5,5,0,0,0,1.7-1.82V11.86Z"/>
+      <path fill="#4285f4" fill-rule="evenodd" d="M17.74,16.32l-1.42,1.42a.42.42,0,0,0,0,.6l3.54,3.54a.42.42,0,0,0,.59,0l1.43-1.43a.42.42,0,0,0,0-.59l-3.54-3.54a.42.42,0,0,0-.6,0"/>
+      <path fill="#669df6" fill-rule="evenodd" d="M11,2a9,9,0,1,0,9,9,9,9,0,0,0-9-9m0,15.69A6.68,6.68,0,1,1,17.69,11,6.68,6.68,0,0,1,11,17.69"/>
+    </symbol>
+    <!-- VPC: official Google icon (Icon_24px_VirtualPrivateCloud_Color) -->
+    <symbol id="vpcIcon" viewBox="0 0 24 24">
+      <rect fill="#aecbfa" x="16" y="2" width="6" height="6"/>
+      <rect fill="#669df6" x="19" y="2" width="3" height="6"/>
+      <rect fill="#aecbfa" x="16" y="16" width="6" height="6"/>
+      <rect fill="#669df6" x="19" y="16" width="3" height="6"/>
+      <rect fill="#aecbfa" x="2" y="2" width="6" height="6"/>
+      <rect fill="#669df6" x="5" y="2" width="3" height="6"/>
+      <rect fill="#aecbfa" x="2" y="16" width="6" height="6"/>
+      <rect fill="#669df6" x="5" y="16" width="3" height="6"/>
+      <rect fill="#669df6" x="8" y="4" width="8" height="2"/>
+      <rect fill="#669df6" x="8" y="18" width="8" height="2"/>
+      <rect fill="#669df6" x="18" y="8" width="2" height="8"/>
+      <rect fill="#669df6" x="4" y="8" width="2" height="8"/>
+      <rect fill="#4285f4" x="4" y="8" width="2" height="2"/>
+      <rect fill="#4285f4" x="18" y="8" width="2" height="2"/>
+      <rect fill="#4285f4" x="8" y="4" width="2" height="2"/>
+      <rect fill="#4285f4" x="8" y="18" width="2" height="2"/>
+    </symbol>
+    <!-- Compute: official Google icon (Icon_24px_ComputeEngine_Color) -->
+    <symbol id="computeIcon" viewBox="0 0 24 24">
+      <rect fill="#aecbfa" x="9" y="9" width="6" height="6"/>
+      <rect fill="#669df6" x="11" y="2" width="2" height="4"/>
+      <rect fill="#669df6" x="7" y="2" width="2" height="4"/>
+      <rect fill="#669df6" x="15" y="2" width="2" height="4"/>
+      <rect fill="#4285f4" x="11" y="18" width="2" height="4"/>
+      <rect fill="#4285f4" x="7" y="18" width="2" height="4"/>
+      <rect fill="#4285f4" x="15" y="18" width="2" height="4"/>
+      <rect fill="#4285f4" x="19" y="10" width="2" height="4" transform="translate(8 32) rotate(-90)"/>
+      <rect fill="#4285f4" x="19" y="14" width="2" height="4" transform="translate(4 36) rotate(-90)"/>
+      <rect fill="#4285f4" x="19" y="6" width="2" height="4" transform="translate(12 28) rotate(-90)"/>
+      <rect fill="#669df6" x="3" y="10" width="2" height="4" transform="translate(-8 16) rotate(-90)"/>
+      <rect fill="#669df6" x="3" y="14" width="2" height="4" transform="translate(-12 20) rotate(-90)"/>
+      <rect fill="#669df6" x="3" y="6" width="2" height="4" transform="translate(-4 12) rotate(-90)"/>
+      <path fill="#aecbfa" d="M5,5V19H19V5ZM17,17H7V7H17Z"/>
+      <polygon fill="#669df6" points="9 15 15 15 12 12 9 15"/>
+      <polygon fill="#4285f4" points="12 12 15 15 15 9 12 12"/>
+    </symbol>
+    <!-- Storage: official Google icon (Icon_24px_CloudStorage_Color) -->
+    <symbol id="storageIcon" viewBox="0 0 24 24">
+      <rect fill="#aecbfa" x="2" y="4" width="20" height="7"/>
+      <rect fill="#669df6" x="20" y="4" width="2" height="7"/>
+      <polygon fill="#4285f4" points="22 4 20 4 20 11 22 4"/>
+      <rect fill="#669df6" x="2" y="4" width="2" height="7"/>
+      <rect fill="#fff" x="6" y="7" width="6" height="1"/>
+      <rect fill="#fff" x="15" y="6" width="3" height="3" rx="1.5"/>
+      <rect fill="#aecbfa" x="2" y="13" width="20" height="7"/>
+      <rect fill="#669df6" x="20" y="13" width="2" height="7"/>
+      <polygon fill="#4285f4" points="22 13 20 13 20 20 22 13"/>
+      <rect fill="#669df6" x="2" y="13" width="2" height="7"/>
+      <rect fill="#fff" x="6" y="16" width="6" height="1"/>
+      <rect fill="#fff" x="15" y="15" width="3" height="3" rx="1.5"/>
+    </symbol>
+  </defs>
+  <rect width="400" height="280" rx="10" fill="#f8fafc"/>
+  <!-- Header -->
+  <rect x="0" y="0" width="400" height="40" rx="10" fill="white"/>
+  <text x="200" y="26" text-anchor="middle" dominant-baseline="middle" fill="#1e293b" font-size="14" font-weight="600" font-family="system-ui, sans-serif">Google Cloud • Infrastructure</text>
+  <!-- GCP Project -->
+  <rect x="80" y="52" width="240" height="44" rx="8" fill="white" stroke="#4285f4" stroke-width="2" filter="url(#gshadow3)"/>
+  <text x="200" y="74" text-anchor="middle" dominant-baseline="middle" fill="#1e293b" font-size="12" font-weight="600" font-family="system-ui, sans-serif">GCP Project</text>
+  <!-- VPC: Virtual Private Cloud – official Google VPC icon -->
+  <rect x="32" y="112" width="104" height="64" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1" filter="url(#gshadow3)"/>
+  <rect x="48" y="128" width="72" height="32" rx="4" fill="#e0f2fe"/>
+  <rect x="49" y="129" width="70" height="30" rx="3" fill="none" stroke="#0284c7" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.6"/>
+  <use href="#vpcIcon" x="72" y="132" width="24" height="24"/>
+  <text x="84" y="168" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="10" font-weight="600" font-family="system-ui, sans-serif">VPC</text>
+  <!-- Compute: official Google Compute Engine icon -->
+  <rect x="156" y="112" width="88" height="64" rx="6" fill="white" stroke="#22c55e" stroke-width="2" filter="url(#gshadow3)"/>
+  <rect x="172" y="128" width="56" height="32" rx="4" fill="#dcfce7"/>
+  <rect x="173" y="129" width="54" height="30" rx="3" fill="none" stroke="#15803d" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.6"/>
+  <use href="#computeIcon" x="188" y="132" width="24" height="24"/>
+  <text x="200" y="168" text-anchor="middle" dominant-baseline="middle" fill="#15803d" font-size="10" font-weight="600" font-family="system-ui, sans-serif">Compute</text>
+  <!-- BigQuery: official Google BigQuery icon -->
+  <rect x="264" y="112" width="104" height="64" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1" filter="url(#gshadow3)"/>
+  <rect x="280" y="128" width="72" height="32" rx="4" fill="#dcfce7"/>
+  <rect x="281" y="129" width="70" height="30" rx="3" fill="none" stroke="#4285f4" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.6"/>
+  <use href="#bigQueryIcon" x="302" y="132" width="24" height="24"/>
+  <text x="316" y="168" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="10" font-weight="600" font-family="system-ui, sans-serif">BigQuery</text>
+  <!-- Storage: official Google Cloud Storage icon -->
+  <rect x="156" y="192" width="88" height="64" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1" filter="url(#gshadow3)"/>
+  <rect x="172" y="208" width="56" height="32" rx="4" fill="#fef3c7"/>
+  <rect x="173" y="209" width="54" height="30" rx="3" fill="none" stroke="#b45309" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.6"/>
+  <use href="#storageIcon" x="188" y="212" width="24" height="24"/>
+  <text x="200" y="248" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="10" font-weight="600" font-family="system-ui, sans-serif">Storage</text>
+  <!-- Connectors (drawn last so they sit on top) -->
+  <path d="M200 96 L84 112" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 2" marker-end="url(#arrowInfra)"/>
+  <path d="M200 96 L200 112" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 2" marker-end="url(#arrowInfra)"/>
+  <path d="M200 96 L316 112" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 2" marker-end="url(#arrowInfra)"/>
+  <path d="M200 176 L200 192" stroke="#22c55e" stroke-width="1" stroke-dasharray="3 2" marker-end="url(#arrowInfraGreen)"/>
+</svg>

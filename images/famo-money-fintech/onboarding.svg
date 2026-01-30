@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none" role="img" aria-labelledby="onboard-title onboard-desc">
+  <title id="onboard-title">Family onboarding</title>
+  <desc id="onboard-desc">Step-by-step family onboarding: Details, Members, Link. Add family members and send invites to track investments together.</desc>
+  <defs>
+    <filter id="fshadowOnboard" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="400" height="280" rx="10" fill="#f8fafc"/>
+  <!-- Header: 44px, centered title -->
+  <rect x="0" y="0" width="400" height="44" rx="10" fill="white" filter="url(#fshadowOnboard)"/>
+  <text x="200" y="22" text-anchor="middle" dominant-baseline="middle" fill="#0f172a" font-size="12" font-weight="600" font-family="Inter, system-ui, -apple-system, sans-serif" letter-spacing="0.02em">Family onboarding</text>
+  <!-- Progress: 24px margin, 8px below header; bar 40–360 (320px), 3 steps -->
+  <rect x="40" y="58" width="320" height="6" rx="3" fill="#e2e8f0"/>
+  <rect x="40" y="58" width="160" height="6" rx="3" fill="#059669"/>
+  <circle cx="120" cy="61" r="5" fill="#059669"/>
+  <circle cx="200" cy="61" r="5" fill="#059669"/>
+  <circle cx="280" cy="61" r="5" fill="#e2e8f0"/>
+  <text x="120" y="80" text-anchor="middle" dominant-baseline="middle" fill="#059669" font-size="8" font-weight="600" font-family="Inter, system-ui, sans-serif">Details</text>
+  <text x="200" y="80" text-anchor="middle" dominant-baseline="middle" fill="#059669" font-size="8" font-weight="600" font-family="Inter, system-ui, sans-serif">Members</text>
+  <text x="280" y="80" text-anchor="middle" dominant-baseline="middle" fill="#94a3b8" font-size="8" font-family="Inter, system-ui, sans-serif">Link</text>
+  <!-- Step content card: 40,88 320x176, 16px padding -->
+  <rect x="40" y="88" width="320" height="176" rx="8" fill="white" filter="url(#fshadowOnboard)" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="56" y="114" dominant-baseline="middle" fill="#1e293b" font-size="10" font-weight="600" font-family="Inter, system-ui, sans-serif">Add family members</text>
+  <text x="56" y="128" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="Inter, system-ui, sans-serif">Invite members to track investments together.</text>
+  <rect x="56" y="140" width="288" height="32" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="72" y="156" dominant-baseline="middle" fill="#94a3b8" font-size="9" font-family="Inter, system-ui, sans-serif">Email address</text>
+  <rect x="56" y="184" width="136" height="28" rx="6" fill="#e2e8f0"/>
+  <text x="124" y="198" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-weight="500" font-family="Inter, system-ui, sans-serif">Cancel</text>
+  <rect x="200" y="184" width="144" height="28" rx="6" fill="#059669"/>
+  <text x="272" y="198" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="9" font-weight="600" font-family="Inter, system-ui, sans-serif">Send invite</text>
+</svg>

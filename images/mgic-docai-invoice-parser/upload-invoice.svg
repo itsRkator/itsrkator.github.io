@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none" role="img" aria-labelledby="upload-invoice-title upload-invoice-desc" overflow="hidden">
+  <title id="upload-invoice-title">Upload invoice</title>
+  <desc id="upload-invoice-desc">MGIC DocAI invoice parser: drag &amp; drop or browse to upload invoice PDF/image.</desc>
+  <defs>
+    <filter id="uploadInvoiceShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <!-- Material UI CloudUploadOutlined (exact path from MUI) -->
+    <symbol id="iconCloudUploadOutlined" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96M19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3M8 13h2.55v3h2.9v-3H16l-4-4z"/>
+    </symbol>
+  </defs>
+  <!-- Margins: 32px left/right. 8px gap header→card. -->
+  <rect width="400" height="280" rx="10" fill="#f8fafc"/>
+  <rect x="0" y="0" width="400" height="44" rx="10" fill="white" filter="url(#uploadInvoiceShadow)"/>
+  <text x="200" y="22" text-anchor="middle" dominant-baseline="middle" fill="#0f172a" font-size="12" font-weight="600" font-family="Inter, system-ui, -apple-system, sans-serif" letter-spacing="0.02em">Upload invoice</text>
+
+  <!-- Drop zone: gray dashed border, upload icon, copy, Browse Files button -->
+  <rect x="32" y="52" width="336" height="208" rx="8" fill="white" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="8 6" filter="url(#uploadInvoiceShadow)"/>
+
+  <!-- CloudUploadOutlined icon (exact MUI path, gray) -->
+  <use href="#iconCloudUploadOutlined" x="176" y="88" width="48" height="48" fill="#94a3b8"/>
+
+  <!-- "Drag & Drop files here" and "or" near Browse Files button; reduced button height -->
+  <text x="200" y="198" text-anchor="middle" dominant-baseline="middle" fill="#475569" font-size="12" font-weight="500" font-family="Inter, system-ui, sans-serif">Drag &amp; Drop files here</text>
+  <text x="200" y="212" text-anchor="middle" dominant-baseline="middle" fill="#94a3b8" font-size="10" font-family="Inter, system-ui, sans-serif">or</text>
+  <rect x="148" y="222" width="104" height="28" rx="6" fill="none" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="200" y="236" text-anchor="middle" dominant-baseline="middle" fill="#2563eb" font-size="11" font-weight="600" font-family="Inter, system-ui, sans-serif">Browse Files</text>
+</svg>

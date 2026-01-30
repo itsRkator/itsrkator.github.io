@@ -836,7 +836,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #00758f;
+  background-color: #161c2d;
   z-index: 9999999;
 }
 
@@ -2069,5 +2069,8 @@ button:not(:disabled) {
   background-color: #58606214;
   border-radius: 0% !important;
 }
+
+/* Modern overrides: applied only when rk-modern.css is loaded (body.rk-modern / .rk-page).
+   Design tokens and layout consistency are defined in rk-modern.css. */
 
 /*# sourceMappingURL=style.css.map */

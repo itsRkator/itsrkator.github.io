@@ -1,213 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <title>Rohitash - Personal Profile</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
-    <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
-    <meta content="Zoyothemes" name="author" />
+    <title>Rohitash Kator | Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rohitash Kator — Senior Full-Stack Software Engineer. Selected projects in backend systems, microservices, and modern web apps."
+    />
+    <meta
+      name="keywords"
+      content="Rohitash Kator, portfolio, projects, Node.js, TypeScript, NestJS, microservices, Angular, React, PostgreSQL"
+    />
+    <meta content="Rohitash Kator" name="author" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+    />
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <!-- MK Lightbox -->
-    <link href="css/mklb.css" rel="stylesheet" type="text/css" />
     <!-- Icons -->
-    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="css/materialdesignicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!-- Main css File -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
-    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
-</head>
+    <link
+      href="css/style.css?v=20260128"
+      rel="stylesheet"
+      type="text/css"
+      id="theme-opt"
+    />
+    <link
+      href="css/colors/default.css?v=20260128"
+      rel="stylesheet"
+      id="color-opt"
+    />
+    <link
+      href="css/rk-modern.css?v=20260128-15"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
 
-<body data-bs-spy="scroll" data-bs-offset="20" data-bs-target="#navbar-navlist">
+  <body
+    data-bs-spy="scroll"
+    data-bs-offset="20"
+    data-bs-target="#navbar-navlist"
+    class="rk-page rk-portfolio"
+  >
     <!-- Loader -->
-    <div id="preloader">
-        <div id="status">
-            <div class="spinner">
-                <div class="double-bounce1"></div>
-                <div class="double-bounce2"></div>
-            </div>
+    <div id="preloader" aria-hidden="true" role="status" aria-live="polite">
+      <div id="status">
+        <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
         </div>
+      </div>
     </div>
     <!-- Loader -->
 
     <!-- Navbar Start -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
-        <div class="container">
-            <!-- Logo container-->
-            <a class="logo navbar-brand text-dark" style="color: #343a40 !important;" href="./index.html">Rohitash Kator</a>
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky rk-topbar"
+    >
+      <div class="container rk-topbar-inner">
+        <a
+          class="navbar-brand rk-brand"
+          href="index.html#home"
+          aria-label="Home"
+        >
+          <span>Rohitash</span>
+          <span>Kator</span>
+        </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="mdi mdi-menu"></i>
-            </button><!-- End Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="mdi mdi-menu"></i>
+        </button>
 
-            <div class="collapse navbar-collapse navigation" id="navbarCollapse">
-                <ul id="navbar-navlist" class="navbar-nav ms-auto">
-                    <li id="navbar-navlist" class="nav-item">
-                        <a class="nav-link" href="./index.html#home">Home</a>
-                    </li>
-                    <!--end nav item-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html#resume">Resume</a>
-                    </li>
-                    <!--end nav item-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html#interest-hobbies">Interest & Hobbies</a>
-                    </li>
-                    <!--end nav item-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html#projects">Projects</a>
-                    </li>
-                    <!--end nav item-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html#skills">Skills</a>
-                    </li>
-                    <!--end nav item-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html#contact">Contact</a>
-                    </li>
-                    <!--end nav item-->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages
-                        </a>
-                        <div class="dropdown-menu rounded m-0" aria-labelledby="navbarDropdown">
-                            <div class="container ml-0 ml-md-0">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <!-- <a class="dropdown-item" href="page-blog.html">Blog</a> -->
-                                        <!-- <a class="dropdown-item" href="page-blog-detail.html">Blog Detail</a> -->
-                                        <a class="dropdown-item" href="page-portfolio.html">Portfolio</a>
-                                        <a class="dropdown-item" href="page-portfolio-detail.html">Portfolio Detail</a>
-                                    </div>
-                                    <!--end col-->
-                                </div>
-                                <!--end row-->
-                            </div>
-                            <!--end container-->
-                        </div>
-                    </li>
-                    <!--end nav item-->
-                </ul>
+        <div class="collapse navbar-collapse navigation" id="navbarCollapse">
+          <ul id="navbar-navlist" class="navbar-nav rk-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="page-portfolio.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page-blog.html">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
+          </ul>
 
-                <ul class="top-right text-right list-unstyled list-inline mb-0 mt-2 mt-sm-0 nav-social">
-                    <li class="list-inline-item me-2"><a href="javascript:void(0)"><i class="mdi mdi-facebook"></i></a>
-                    </li>
-                    <li class="list-inline-item me-2"><a href="javascript:void(0)"><i class="mdi mdi-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-instagram"></i></a></li>
-                </ul>
-
+          <div class="rk-topbar-right">
+            <div class="rk-topbar-socials" aria-label="Social profiles">
+              <a
+                class="rk-social-icon"
+                href="https://github.com/itsrkator"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+              >
+                <img
+                  src="images/skills/github/github-original.svg"
+                  alt="GitHub"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                class="rk-social-icon"
+                href="https://www.linkedin.com/in/itsrkator"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+              >
+                <img
+                  src="images/skills/linkedin/linkedin-plain.svg"
+                  alt="LinkedIn"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                class="rk-social-icon"
+                href="https://www.facebook.com/itsrkator"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Facebook"
+              >
+                <img
+                  src="images/skills/facebook/facebook-plain.svg"
+                  alt="Facebook"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                class="rk-social-icon"
+                href="https://www.instagram.com/itsrkator/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+              >
+                <img
+                  src="images/skills/instagram/instagram-plain.svg"
+                  alt="Instagram"
+                  loading="lazy"
+                />
+              </a>
             </div>
+          </div>
         </div>
-        <!--end container-->
+      </div>
     </nav>
-    <!--end navbar-->
     <!-- Navbar End -->
 
-    <!-- Hero Start -->
-    <section class="bg-half bg-light d-table w-100" style="background: url('images/bg-posted.jpg')center center;">
-        <div class="bg-overlay bg-overlay-white"></div>
+    <main class="rk-page-shell" id="top">
+      <section class="rk-page-head">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 text-center">
-                    <div class="page-next-level">
-                        <h4 class="title text-black"> Projects & Works </h4>
-                        <div class="page-next">
-                            <nav aria-label="breadcrumb" class="d-inline-block">
-                                <ul class="breadcrumb rounded mb-0 mt-3">
-                                    <li class="breadcrumb-item"><a href="index.html">Rohitash Kator</a></li>
-                                    <li class="breadcrumb-item"><a href="javascript:void(0)">Page</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Portfolio</li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-                <!--end col-->
-            </div>
-            <!--end row-->
+          <div class="rk-page-head-row">
+            <h1 class="rk-page-title">Projects</h1>
+            <a class="rk-pill rk-pill-action" href="page-blog.html"
+              ><span>Articles</span
+              ><span class="rk-arrow" aria-hidden="true">→</span></a
+            >
+          </div>
+          <p class="rk-page-sub">
+            Selected projects and production work — backend services, platforms,
+            and admin portals.
+          </p>
         </div>
-        <!--end container-->
-    </section>
-    <!--end section-->
-    <!-- Hero End -->
+      </section>
 
-    <!-- Portfolio STart -->
-    <section class="section" id="projects">
+      <!-- Portfolio -->
+      <section class="rk-work" id="projects">
         <div class="container">
-            <div class="row">
-                <ul class="col container-filter list-unstyled categories-filter text-center mb-0" id="filter">
-                    <li class="list-inline-item"><a href="javascript:void(0)"
-                            class="categories tab-active border d-block text-dark rounded active"
-                            onclick="filterSelection('all')">All</a></li>
-                    <li class="list-inline-item"><a href="javascript:void(0)"
-                            class="categories tab-active border d-block text-dark rounded"
-                            onclick="filterSelection('branding')">Branding</a></li>
-                    <li class="list-inline-item"><a href="javascript:void(0)"
-                            class="categories tab-active border d-block text-dark rounded"
-                            onclick="filterSelection('designing')">Designing</a></li>
-                    <li class="list-inline-item"><a href="javascript:void(0)"
-                            class="categories tab-active border d-block text-dark rounded"
-                            onclick="filterSelection('photography')">Photography</a></li>
-                    <li class="list-inline-item"><a href="javascript:void(0)"
-                            class="categories tab-active border d-block text-dark rounded"
-                            onclick="filterSelection('development')">Development</a></li>
-                </ul>
-            </div>
+          <div class="rk-filter-row" id="filter" aria-label="Project filters">
+            <a
+              href="#projects"
+              class="rk-filter-btn categories active"
+              data-filter="all"
+              >All</a
+            >
+            <a
+              href="#projects"
+              class="rk-filter-btn categories"
+              data-filter="development"
+              >Development</a
+            >
+            <a
+              href="#projects"
+              class="rk-filter-btn categories"
+              data-filter="backend"
+              >Backend</a
+            >
+            <a
+              href="#projects"
+              class="rk-filter-btn categories"
+              data-filter="frontend"
+              >Frontend</a
+            >
+            <a
+              href="#projects"
+              class="rk-filter-btn categories"
+              data-filter="platform"
+              >Platform</a
+            >
+          </div>
 
-            <div class="row projects-wrapper">
-                <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box branding">
-                    <div
-                        class="item-box portfolio-box card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
-                        <div class="card-body p-0">
-                            <img src="images/portfolio/1.jpg" class="img-fluid" alt="work-image">
-                            <div class="overlay-work bg-dark"></div>
-                            <div class="content">
-                                <h5 class="mb-0"><a href="page-portfolio-detail.html" class="text-white title">Iphone
-                                        mockup</a></h5>
-                                <h6 class="text-light tag mb-0">Branding</h6>
-                            </div>
-                            <div class="icons text-center">
-                                <a href="javascript:void(0)" data-src="images/portfolio/1.jpg" data-gallery="myGal"
-                                    class="mfp-image text-primary work-icon bg-white d-inline-block rounded-pill">
-                                    <i data-feather="camera" class="fea icon-sm"></i>
-                                </a>
-                            </div>
-                        </div>
+          <div class="row g-4 projects-wrapper">
+            <div
+              class="col-lg-4 col-md-6 col-12 filter-box development backend platform"
+            >
+              <a
+                href="page-portfolio-detail.html?project=poll"
+                class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded"
+              >
+                <div class="card-body p-0">
+                  <img
+                    src="images/poll-management-system/dashboard.svg"
+                    class="img-fluid"
+                    alt="Poll Management System"
+                    loading="lazy"
+                  />
+                  <div class="overlay-work" aria-hidden="true"></div>
+                  <div class="content">
+                    <h5 class="mb-0">
+                      <span class="title">Poll Management System</span>
+                    </h5>
+                    <div class="rk-chips">
+                      <span class="rk-chip">Node.js</span>
+                      <span class="rk-chip">Express</span>
+                      <span class="rk-chip">RBAC</span>
                     </div>
-                </div> -->
-                <!--end col-->
-
-                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box designing development">
-                    <div
-                        class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
-                        <div class="card-body p-0">
-                            <img src="images/portfolio/2.jpg" class="img-fluid" alt="work-image">
-                            <div class="overlay-work bg-dark"></div>
-                            <div class="content">
-                                <h5 class="mb-0"><a href="page-portfolio-detail.html" class="text-white title">Student Portal</a></h5>
-                                <h6 class="text-light tag mb-0">Mini Project</h6>
-                            </div>
-                            <div class="icons text-center">
-                                <a href="javascript:void(0)" data-src="images/portfolio/2.jpg" data-gallery="myGal"
-                                    class="mfp-image text-primary work-icon bg-white d-inline-block rounded-pill">
-                                    <i data-feather="camera" class="fea icon-sm"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="rk-work-desc mb-0">
+                      Poll lifecycles, voting workflows, real-time reporting,
+                      and analytics.
+                    </p>
+                  </div>
                 </div>
-                <!--end col-->
+              </a>
+            </div>
+            <!--end col-->
 
-                <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box photography">
+            <div
+              class="col-lg-4 col-md-6 col-12 filter-box development backend platform"
+            >
+              <a
+                href="page-portfolio-detail.html?project=julius"
+                class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded"
+              >
+                <div class="card-body p-0">
+                  <img
+                    src="images/julius-influencer-platform/campaign-dashboard.svg"
+                    class="img-fluid"
+                    alt="Julius Influencer Platform"
+                    loading="lazy"
+                  />
+                  <div class="overlay-work" aria-hidden="true"></div>
+                  <div class="content">
+                    <h5 class="mb-0">
+                      <span class="title">Julius Influencer Platform</span>
+                    </h5>
+                    <div class="rk-chips">
+                      <span class="rk-chip">Microservices</span>
+                      <span class="rk-chip">GraphQL</span>
+                      <span class="rk-chip">Phyllo</span>
+                    </div>
+                    <p class="rk-work-desc mb-0">
+                      Campaign tracking, content ingestion, and reliable
+                      analytics at scale.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--end col-->
+
+            <div
+              class="col-lg-4 col-md-6 col-12 filter-box development backend"
+            >
+              <a
+                href="page-portfolio-detail.html?project=chat"
+                class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded"
+              >
+                <div class="card-body p-0">
+                  <img
+                    src="images/real-time-chat-app/chat-rooms.svg"
+                    class="img-fluid"
+                    alt="Real-Time Chat Application"
+                    loading="lazy"
+                  />
+                  <div class="overlay-work" aria-hidden="true"></div>
+                  <div class="content">
+                    <h5 class="mb-0">
+                      <span class="title">Real-Time Chat Application</span>
+                    </h5>
+                    <div class="rk-chips">
+                      <span class="rk-chip">NestJS</span>
+                      <span class="rk-chip">Socket.IO</span>
+                      <span class="rk-chip">PostgreSQL</span>
+                    </div>
+                    <p class="rk-work-desc mb-0">
+                      JWT auth, rooms, presence, typing indicators, and message
+                      state tracking.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--end col-->
+
+            <div
+              class="col-lg-4 col-md-6 col-12 filter-box development backend frontend"
+            >
+              <a
+                href="page-portfolio-detail.html?project=famo"
+                class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded"
+              >
+                <div class="card-body p-0">
+                  <img
+                    src="images/famo-money-fintech/family-dashboard.svg"
+                    class="img-fluid"
+                    alt="FamO Money FinTech Platform"
+                    loading="lazy"
+                  />
+                  <div class="overlay-work" aria-hidden="true"></div>
+                  <div class="content">
+                    <h5 class="mb-0">
+                      <span class="title">FamO Money (FinTech)</span>
+                    </h5>
+                    <div class="rk-chips">
+                      <span class="rk-chip">NestJS</span>
+                      <span class="rk-chip">PostgreSQL</span>
+                      <span class="rk-chip">TypeORM</span>
+                    </div>
+                    <p class="rk-work-desc mb-0">
+                      Multi-asset investment tracking, valuation, profit/loss,
+                      and insights.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 filter-box platform backend">
+              <a
+                href="page-portfolio-detail.html?project=contract"
+                class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded"
+              >
+                <div class="card-body p-0">
+                  <img
+                    src="images/contract-note-parser/pipeline.svg"
+                    class="img-fluid"
+                    alt="Contract Note Parser"
+                    loading="lazy"
+                  />
+                  <div class="overlay-work" aria-hidden="true"></div>
+                  <div class="content">
+                    <h5 class="mb-0">
+                      <span class="title">Contract Note Parser</span>
+                    </h5>
+                    <div class="rk-chips">
+                      <span class="rk-chip">Python</span>
+                      <span class="rk-chip">AWS Textract</span>
+                      <span class="rk-chip">LLMs</span>
+                    </div>
+                    <p class="rk-work-desc mb-0">
+                      OCR + LLM extraction with 95%+ accuracy and validation
+                      workflows.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 filter-box platform backend">
+              <a
+                href="page-portfolio-detail.html?project=crash"
+                class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded"
+              >
+                <div class="card-body p-0">
+                  <img
+                    src="images/vehicle-crash-analytics/dashboard.svg"
+                    class="img-fluid"
+                    alt="Vehicle Crash Analytics Platform"
+                    loading="lazy"
+                  />
+                  <div class="overlay-work" aria-hidden="true"></div>
+                  <div class="content">
+                    <h5 class="mb-0">
+                      <span class="title">Vehicle Crash Analytics</span>
+                    </h5>
+                    <div class="rk-chips">
+                      <span class="rk-chip">Angular</span>
+                      <span class="rk-chip">Flask</span>
+                      <span class="rk-chip">Google Cloud</span>
+                    </div>
+                    <p class="rk-work-desc mb-0">
+                      Filterable analytics tables, debounced search, and
+                      export-to-PDF reporting.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--end col-->
+
+            <div
+              class="col-lg-4 col-md-6 col-12 filter-box platform backend frontend"
+            >
+              <a
+                href="page-portfolio-detail.html?project=mgic"
+                class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded"
+              >
+                <div class="card-body p-0">
+                  <img
+                    src="images/mgic-docai-invoice-parser/workflow.svg"
+                    class="img-fluid"
+                    alt="MGIC DocAI Invoice Parser"
+                    loading="lazy"
+                  />
+                  <div class="overlay-work" aria-hidden="true"></div>
+                  <div class="content">
+                    <h5 class="mb-0">
+                      <span class="title">MGIC DocAI (Invoice Parser)</span>
+                    </h5>
+                    <div class="rk-chips">
+                      <span class="rk-chip">Angular</span>
+                      <span class="rk-chip">Flask</span>
+                      <span class="rk-chip">Vertex AI</span>
+                    </div>
+                    <p class="rk-work-desc mb-0">
+                      AI-powered invoice extraction with validation workflows
+                      and faster reviews.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 filter-box platform backend">
+              <a
+                href="page-portfolio-detail.html?project=cloud"
+                class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded"
+              >
+                <div class="card-body p-0">
+                  <img
+                    src="images/cloud-infrastructure-analytics/looker-dashboard.svg"
+                    class="img-fluid"
+                    alt="Cloud Infrastructure & Analytics"
+                    loading="lazy"
+                  />
+                  <div class="overlay-work" aria-hidden="true"></div>
+                  <div class="content">
+                    <h5 class="mb-0">
+                      <span class="title"
+                        >Cloud Infrastructure &amp; Analytics</span
+                      >
+                    </h5>
+                    <div class="rk-chips">
+                      <span class="rk-chip">GCP IAM</span>
+                      <span class="rk-chip">Looker</span>
+                      <span class="rk-chip">Performance</span>
+                    </div>
+                    <p class="rk-work-desc mb-0">
+                      Least-privilege IAM, dashboards, and platform performance
+                      optimization.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--end col-->
+
+            <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box photography">
                     <div
                         class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                         <div class="card-body p-0">
-                            <img src="images/portfolio/3.jpg" class="img-fluid" alt="work-image">
+                            <img src="images/real-time-chat-app/chat-rooms.svg" class="img-fluid" alt="work-image">
                             <div class="overlay-work bg-dark"></div>
                             <div class="content">
                                 <h5 class="mb-0"><a href="page-portfolio-detail.html" class="text-white title">Abstract
@@ -215,7 +509,7 @@
                                 <h6 class="text-light tag mb-0">Abstract</h6>
                             </div>
                             <div class="icons text-center">
-                                <a href="javascript:void(0)" data-src="images/portfolio/3.jpg" data-gallery="myGal"
+                                <a href="#projects" data-src="images/real-time-chat-app/chat-rooms.svg" data-gallery="myGal"
                                     class="mfp-image text-primary work-icon bg-white d-inline-block rounded-pill">
                                     <i data-feather="camera" class="fea icon-sm"></i>
                                 </a>
@@ -223,13 +517,13 @@
                         </div>
                     </div>
                 </div> -->
-                <!--end col-->
+            <!--end col-->
 
-                <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box development">
+            <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box development">
                     <div
                         class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                         <div class="card-body p-0">
-                            <img src="images/portfolio/4.jpg" class="img-fluid" alt="work-image">
+                            <img src="images/famo-money-fintech/family-dashboard.svg" class="img-fluid" alt="work-image">
                             <div class="overlay-work bg-dark"></div>
                             <div class="content">
                                 <h5 class="mb-0"><a href="page-portfolio-detail.html" class="text-white title">Yellow bg
@@ -237,7 +531,7 @@
                                 <h6 class="text-light tag mb-0">Books</h6>
                             </div>
                             <div class="icons text-center">
-                                <a href="javascript:void(0)" data-src="images/portfolio/4.jpg" data-gallery="myGal"
+                                <a href="#projects" data-src="images/famo-money-fintech/family-dashboard.svg" data-gallery="myGal"
                                     class="mfp-image text-primary work-icon bg-white d-inline-block rounded-pill">
                                     <i data-feather="camera" class="fea icon-sm"></i>
                                 </a>
@@ -245,13 +539,13 @@
                         </div>
                     </div>
                 </div> -->
-                <!--end col-->
+            <!--end col-->
 
-                <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box branding">
+            <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box branding">
                     <div
                         class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                         <div class="card-body p-0">
-                            <img src="images/portfolio/5.jpg" class="img-fluid" alt="work-image">
+                            <img src="images/contract-note-parser/pipeline.svg" class="img-fluid" alt="work-image">
                             <div class="overlay-work bg-dark"></div>
                             <div class="content">
                                 <h5 class="mb-0"><a href="page-portfolio-detail.html" class="text-white title">Company
@@ -259,7 +553,7 @@
                                 <h6 class="text-light tag mb-0">V-card</h6>
                             </div>
                             <div class="icons text-center">
-                                <a href="javascript:void(0)" data-src="images/portfolio/5.jpg" data-gallery="myGal"
+                                <a href="#projects" data-src="images/contract-note-parser/pipeline.svg" data-gallery="myGal"
                                     class="mfp-image text-primary work-icon bg-white d-inline-block rounded-pill">
                                     <i data-feather="camera" class="fea icon-sm"></i>
                                 </a>
@@ -267,13 +561,13 @@
                         </div>
                     </div>
                 </div> -->
-                <!--end col-->
+            <!--end col-->
 
-                <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box branding designing">
+            <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box branding designing">
                     <div
                         class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                         <div class="card-body p-0">
-                            <img src="images/portfolio/6.jpg" class="img-fluid" alt="work-image">
+                            <img src="images/vehicle-crash-analytics/dashboard.svg" class="img-fluid" alt="work-image">
                             <div class="overlay-work bg-dark"></div>
                             <div class="content">
                                 <h5 class="mb-0"><a href="page-portfolio-detail.html" class="text-white title">Mockup
@@ -281,7 +575,7 @@
                                 <h6 class="text-light tag mb-0">Photography</h6>
                             </div>
                             <div class="icons text-center">
-                                <a href="javascript:void(0)" data-src="images/portfolio/6.jpg" data-gallery="myGal"
+                                <a href="#projects" data-src="images/vehicle-crash-analytics/dashboard.svg" data-gallery="myGal"
                                     class="mfp-image text-primary work-icon bg-white d-inline-block rounded-pill">
                                     <i data-feather="camera" class="fea icon-sm"></i>
                                 </a>
@@ -289,13 +583,13 @@
                         </div>
                     </div>
                 </div> -->
-                <!--end col-->
+            <!--end col-->
 
-                <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box designing">
+            <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box designing">
                     <div
                         class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                         <div class="card-body p-0">
-                            <img src="images/portfolio/7.jpg" class="img-fluid" alt="work-image">
+                            <img src="images/mgic-docai-invoice-parser/workflow.svg" class="img-fluid" alt="work-image">
                             <div class="overlay-work bg-dark"></div>
                             <div class="content">
                                 <h5 class="mb-0"><a href="page-portfolio-detail.html" class="text-white title">Yellow bg
@@ -303,7 +597,7 @@
                                 <h6 class="text-light tag mb-0">Books</h6>
                             </div>
                             <div class="icons text-center">
-                                <a href="javascript:void(0)" data-src="images/portfolio/7.jpg" data-gallery="myGal"
+                                <a href="#projects" data-src="images/mgic-docai-invoice-parser/workflow.svg" data-gallery="myGal"
                                     class="mfp-image text-primary work-icon bg-white d-inline-block rounded-pill">
                                     <i data-feather="camera" class="fea icon-sm"></i>
                                 </a>
@@ -311,13 +605,13 @@
                         </div>
                     </div>
                 </div> -->
-                <!--end col-->
+            <!--end col-->
 
-                <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box development">
+            <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box development">
                     <div
                         class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                         <div class="card-body p-0">
-                            <img src="images/portfolio/8.jpg" class="img-fluid" alt="work-image">
+                            <img src="images/cloud-infrastructure-analytics/looker-dashboard.svg" class="img-fluid" alt="work-image">
                             <div class="overlay-work bg-dark"></div>
                             <div class="content">
                                 <h5 class="mb-0"><a href="page-portfolio-detail.html" class="text-white title">Company
@@ -325,7 +619,7 @@
                                 <h6 class="text-light tag mb-0">V-card</h6>
                             </div>
                             <div class="icons text-center">
-                                <a href="javascript:void(0)" data-src="images/portfolio/8.jpg" data-gallery="myGal"
+                                <a href="#projects" data-src="images/cloud-infrastructure-analytics/looker-dashboard.svg" data-gallery="myGal"
                                     class="mfp-image text-primary work-icon bg-white d-inline-block rounded-pill">
                                     <i data-feather="camera" class="fea icon-sm"></i>
                                 </a>
@@ -333,13 +627,13 @@
                         </div>
                     </div>
                 </div> -->
-                <!--end col-->
+            <!--end col-->
 
-                <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box photography">
+            <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box photography">
                     <div
                         class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                         <div class="card-body p-0">
-                            <img src="images/portfolio/9.jpg" class="img-fluid" alt="work-image">
+                            <img src="images/poll-management-system/rbac.svg" class="img-fluid" alt="work-image">
                             <div class="overlay-work bg-dark"></div>
                             <div class="content">
                                 <h5 class="mb-0"><a href="page-portfolio-detail.html" class="text-white title">Mockup
@@ -347,7 +641,7 @@
                                 <h6 class="text-light tag mb-0">Photography</h6>
                             </div>
                             <div class="icons text-center">
-                                <a href="javascript:void(0)" data-src="images/portfolio/9.jpg" data-gallery="myGal"
+                                <a href="#projects" data-src="images/poll-management-system/rbac.svg" data-gallery="myGal"
                                     class="mfp-image text-primary work-icon bg-white d-inline-block rounded-pill">
                                     <i data-feather="camera" class="fea icon-sm"></i>
                                 </a>
@@ -355,13 +649,13 @@
                         </div>
                     </div>
                 </div> -->
-                <!--end col-->
+            <!--end col-->
 
-                <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box branding">
+            <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box branding">
                     <div
                         class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                         <div class="card-body p-0">
-                            <img src="images/portfolio/10.jpg" class="img-fluid" alt="work-image">
+                            <img src="images/julius-influencer-platform/analytics-reporting.svg" class="img-fluid" alt="work-image">
                             <div class="overlay-work bg-dark"></div>
                             <div class="content">
                                 <h5 class="mb-0"><a href="page-portfolio-detail.html" class="text-white title">Iphone
@@ -369,7 +663,7 @@
                                 <h6 class="text-light tag mb-0">Branding</h6>
                             </div>
                             <div class="icons text-center">
-                                <a href="javascript:void(0)" data-src="images/portfolio/10.jpg" data-gallery="myGal"
+                                <a href="#projects" data-src="images/julius-influencer-platform/analytics-reporting.svg" data-gallery="myGal"
                                     class="mfp-image text-primary work-icon bg-white d-inline-block rounded-pill">
                                     <i data-feather="camera" class="fea icon-sm"></i>
                                 </a>
@@ -377,13 +671,13 @@
                         </div>
                     </div>
                 </div> -->
-                <!--end col-->
+            <!--end col-->
 
-                <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box designing">
+            <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box designing">
                     <div
                         class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                         <div class="card-body p-0">
-                            <img src="images/portfolio/11.jpg" class="img-fluid" alt="work-image">
+                            <img src="images/real-time-chat-app/websocket-arch.svg" class="img-fluid" alt="work-image">
                             <div class="overlay-work bg-dark"></div>
                             <div class="content">
                                 <h5 class="mb-0"><a href="page-portfolio-detail.html" class="text-white title">Mockup
@@ -391,7 +685,7 @@
                                 <h6 class="text-light tag mb-0">Mockup</h6>
                             </div>
                             <div class="icons text-center">
-                                <a href="javascript:void(0)" data-src="images/portfolio/11.jpg" data-gallery="myGal"
+                                <a href="#projects" data-src="images/real-time-chat-app/websocket-arch.svg" data-gallery="myGal"
                                     class="mfp-image text-primary work-icon bg-white d-inline-block rounded-pill">
                                     <i data-feather="camera" class="fea icon-sm"></i>
                                 </a>
@@ -399,13 +693,13 @@
                         </div>
                     </div>
                 </div> -->
-                <!--end col-->
+            <!--end col-->
 
-                <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box branding">
+            <!-- <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 filter-box branding">
                     <div
                         class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                         <div class="card-body p-0">
-                            <img src="images/portfolio/3.jpg" class="img-fluid" alt="work-image">
+                            <img src="images/real-time-chat-app/chat-rooms.svg" class="img-fluid" alt="work-image">
                             <div class="overlay-work bg-dark"></div>
                             <div class="content">
                                 <h5 class="mb-0"><a href="page-portfolio-detail.html" class="text-white title">Abstract
@@ -413,7 +707,7 @@
                                 <h6 class="text-light tag mb-0">Abstract</h6>
                             </div>
                             <div class="icons text-center">
-                                <a href="javascript:void(0)" data-src="images/portfolio/3.jpg" data-gallery="myGal"
+                                <a href="#projects" data-src="images/real-time-chat-app/chat-rooms.svg" data-gallery="myGal"
                                     class="mfp-image text-primary work-icon bg-white d-inline-block rounded-pill">
                                     <i data-feather="camera" class="fea icon-sm"></i>
                                 </a>
@@ -421,118 +715,178 @@
                         </div>
                     </div>
                 </div> -->
-                <!--end col-->
+            <!--end col-->
 
-                <div class="col-12 mt-4 pt-2">
-                    <div class="text-center">
-                        <a href="javascript:void(0)" class="btn btn btn-primary rounded">See More <i
-                                class="mdi mdi-chevron-right"></i></a>
-                    </div>
-                </div>
-                <!--end col-->
-
-            </div>
-            <!--end row-->
+            <!--end col-->
+          </div>
+          <!--end row-->
         </div>
         <!--end container-->
-    </section>
-    <!--end section-->
+      </section>
+    </main>
     <!-- Blog End -->
 
     <!-- Footer Start -->
-    <footer class="footer bg-dark">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <a href="javascript:void(0)" class="footer-logo text-light">Thank You &#128513</a>
-                    <!-- <p class="para-desc mx-auto mt-5 text-light">I'm a Web Developer. Experienced with all stages of the development cycle for dynamic web projects.</p> -->
-                    <ul class="list-unstyled mb-0 mt-4 social-icon">
-                        <li class="list-inline-item me-1"><a href="https://www.linkedin.com/in/itsrkator" class="rounded-circle white-border" target="_blank"><i class="mdi mdi-linkedin text-light"></i></a></li>
-                        <li class="list-inline-item me-1"><a href="https://www.github.com/itsrkator" class="rounded-circle white-border" target="_blank"><i class="mdi mdi-github-circle text-light"></i></a></li>
-                        <li class="list-inline-item me-1"><a href="https://join.skype.com/invite/UZrUbhWkj8Td" class="rounded-circle white-border" target="_blank"><i class="mdi mdi-skype text-light"></i></a></li>
-                        <li class="list-inline-item me-1"><a href="https://www.facebook.com/itsrkator" class="rounded-circle white-border" target="_blank"><i class="mdi mdi-facebook text-light"></i></a></li>
-                        <li class="list-inline-item me-1"><a href="https://www.twitter.com/itsrkator" class="rounded-circle white-border" target="_blank"><i class="mdi mdi-twitter text-light"></i></a></li>
-                        <li class="list-inline-item me-1"><a href="https://www.instagram.com/itsrkator" class="rounded-circle white-border" target="_blank"><i class="mdi mdi-instagram text-light"></i></a></li>
-                        <!-- <li class="list-inline-item me-1"><a href="javascript:void(0)" class="rounded-circle white-border" target="_blank"><i class="mdi mdi-google-plus"></i></a></li> -->
-                    </ul>
-                </div>
-                <!--end col-->
+    <footer class="rk-site-footer" id="footer">
+      <div class="container">
+        <div class="rk-footer-grid">
+          <div class="rk-footer-card">
+            <div class="rk-footer-kicker">.../CONTACT...</div>
+            <div class="rk-footer-links-title">Links</div>
+            <div class="rk-footer-links">
+              <a href="index.html#home">Main</a>
+              <a href="index.html#about">About</a>
+              <a href="page-portfolio.html" aria-current="page">Projects</a>
+              <a href="page-skills.html">Skills</a>
+              <a href="page-hobbies.html">Hobbies</a>
+              <a href="page-profiles.html">Profiles</a>
+              <a href="page-blog.html">Articles</a>
+              <a href="index.html#contact">Contact</a>
             </div>
-            <!--end row-->
+            <div class="rk-footer-site">
+              <div class="rk-footer-site-title">Site</div>
+              <div class="rk-footer-site-text">
+                Senior Full-Stack Software Engineer • Node.js/TypeScript •
+                Microservices • AWS/GCP.
+              </div>
+            </div>
+          </div>
+
+          <div class="rk-footer-name">
+            <div class="rk-footer-big">Rohitash</div>
+            <div class="rk-footer-big">Kator</div>
+            <div class="rk-footer-role">Full-stack developer</div>
+            <div class="rk-footer-socials">
+              <a
+                class="rk-pill"
+                href="https://github.com/itsrkator"
+                target="_blank"
+                rel="noreferrer"
+                ><img
+                  class="rk-pill-icon"
+                  src="images/skills/github/github-original.svg"
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                /><span>GitHub</span></a
+              >
+              <a
+                class="rk-pill"
+                href="https://www.linkedin.com/in/itsrkator"
+                target="_blank"
+                rel="noreferrer"
+                ><img
+                  class="rk-pill-icon"
+                  src="images/skills/linkedin/linkedin-plain.svg"
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                /><span>LinkedIn</span></a
+              >
+              <a
+                class="rk-pill"
+                href="https://x.com/itsrkator"
+                target="_blank"
+                rel="noreferrer"
+                ><img
+                  class="rk-pill-icon"
+                  src="images/skills/twitter/twitter-original.svg"
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                /><span>X</span></a
+              >
+              <a
+                class="rk-pill"
+                href="https://www.facebook.com/itsrkator"
+                target="_blank"
+                rel="noreferrer"
+                ><img
+                  class="rk-pill-icon"
+                  src="images/skills/facebook/facebook-plain.svg"
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                /><span>Facebook</span></a
+              >
+              <a
+                class="rk-pill"
+                href="https://www.instagram.com/itsrkator/"
+                target="_blank"
+                rel="noreferrer"
+                ><img
+                  class="rk-pill-icon"
+                  src="images/skills/instagram/instagram-plain.svg"
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                /><span>Instagram</span></a
+              >
+              <a
+                class="rk-pill"
+                href="https://leetcode.com/u/itsrkator/"
+                target="_blank"
+                rel="noreferrer"
+                ><img
+                  class="rk-pill-icon"
+                  src="images/skills/leetcode/leetcode-plain.svg"
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                /><span>LeetCode</span></a
+              >
+              <a
+                class="rk-pill"
+                href="https://medium.com/@itsrkator"
+                target="_blank"
+                rel="noreferrer"
+                ><i class="mdi mdi-medium" aria-hidden="true"></i
+                ><span>Medium</span></a
+              >
+              <a
+                class="rk-pill"
+                href="https://www.youtube.com/@itsrkator"
+                target="_blank"
+                rel="noreferrer"
+                ><i class="mdi mdi-youtube" aria-hidden="true"></i
+                ><span>YouTube</span></a
+              >
+            </div>
+          </div>
         </div>
-        <!--end container-->
+      </div>
     </footer>
-    <!--end footer-->
-    <footer class="footer footer-bar bg-black">
-        <div class="container text-foot text-center">
-            <p class="mb-0 text-white-50">
-                &copy;
-                <script>
-                    document.write(new Date().getFullYear())
-                </script>
-                <a href="javascript:void(0)" class="text-white-50">Rohitash Kator</a>.
-            </p>
-        </div>
-        <!--end container-->
+    <footer class="rk-footer-bar">
+      <div class="container text-center">
+        <p class="mb-0 text-white-50">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Rohitash Kator.
+        </p>
+      </div>
     </footer>
-    <!--end footer-->
     <!-- Footer End -->
 
-    <a href="javascript: void(0);" class="back-to-top btn btn-icon btn-soft-primary" id="back-to-top"
-        onclick="topFunction()">
-        <i data-feather="arrow-up" class="icons"></i>
+    <a
+      href="#top"
+      class="back-to-top btn btn-icon btn-soft-primary"
+      id="back-to-top"
+      aria-label="Back to top"
+    >
+      <i data-feather="arrow-up" class="icons"></i>
     </a>
     <!-- Back to top -->
-
-    <!-- Style switcher -->
-    <div id="style-switcher" class="bg-light border p-3 pt-2 pb-2" onclick="toggleSwitcher()">
-        <div>
-            <h6 class="color-scheme-title text-center font-weight-bolder mb-2">Select your color</h6>
-            <ul class="pattern text-center mb-0">
-                <li class="list-inline-item">
-                    <a class="default" href="javascript: void(0);" onclick="setColor('default')"></a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="blue" href="javascript: void(0);" onclick="setColor('red')"></a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="green" href="javascript: void(0);" onclick="setColor('green')"></a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="mosaic-blue" href="javascript: void(0);" onclick="setColor('mosaic-blue')"></a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="light-yellow" href="javascript: void(0);" onclick="setColor('light-yellow')"></a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="purple" href="javascript: void(0);" onclick="setColor('purple')"></a>
-                </li>
-            </ul>
-            <div class="bottom">
-                <a href="javascript: void(0);" class="settings bg-white shadow d-block"><i
-                        class="mdi mdi-settings mdi-24px position-absolute mdi-spin text-primary"></i></a>
-            </div>
-        </div>
-    </div>
-    <!-- end Style switcher -->
-
 
     <!-- Javascript -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
-    <!-- MK Lightbox -->
-    <script src="js/mklb.js"></script>
-    <script src="js/filter.init.js"></script>
-
     <!-- Feather icon -->
     <script src="js/feather.min.js"></script>
 
-    <!-- Switcher -->
-    <script src="js/switcher.js"></script>
-
     <!-- Main Js -->
     <script src="js/app.js"></script>
-
-</body>
-
+    <script src="js/rk-modern.js?v=20260128-15"></script>
+  </body>
 </html>

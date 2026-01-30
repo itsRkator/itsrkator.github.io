@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 224" fill="none" role="img" aria-labelledby="discover-title discover-desc">
+  <title id="discover-title">Influencer Platform · Discover influencers</title>
+  <desc id="discover-desc">Influencer Platform discovery: header, filter bar, list controls, vertical influencer cards, Refine Results sidebar.</desc>
+  <defs>
+    <filter id="jshadowDiscover" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+    <symbol id="avatarDiscover" viewBox="0 0 24 24">
+      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" fill="currentColor"/>
+    </symbol>
+    <symbol id="iconSearch" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+    </symbol>
+    <symbol id="chevronDown" viewBox="0 0 12 12">
+      <path fill="currentColor" d="M2 4l4 4 4-4H2z"/>
+    </symbol>
+    <!-- Footer icons strictly from images/skills: facebook-original, instagram-plain, yunohost-plain, twitter-original -->
+    <symbol id="iconInstagram" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></symbol>
+    <symbol id="iconFacebook" viewBox="0 0 128 128"><rect fill="#3d5a98" x="4.83" y="4.83" width="118.35" height="118.35" rx="6.53" ry="6.53"/><path fill="#fff" d="M86.48 123.17V77.34h15.38l2.3-17.86H86.48V48.08c0-5.17 1.44-8.7 8.85-8.7h9.46v-16A126.56 126.56 0 0 0 91 22.7C77.38 22.7 68 31 68 46.31V59.48H52.62V77.34H68v45.83z"/></symbol>
+    <symbol id="iconTwitter" viewBox="0 0 128 128"><path fill="#1DA1F2" d="M40.254 127.637c48.304 0 74.718-40.043 74.718-82.402 0-1.203-.027-2.422-.082-3.602 5.14 2.28 10.04 4.97 13.78 8.11-5.79 3.48-12.09 5.82-18.61 6.38 6.48-3.87 11.6-10 13.94-17.24-6.06 3.59-12.77 6.09-20.06 7.47-5.72-6.12-13.91-9.94-22.91-9.94-17.34 0-31.33 14.06-31.33 31.39 0 2.46.28 4.86.82 7.18-26.04-1.31-49.09-13.77-64.52-32.68-2.69 4.62-4.23 9.99-4.23 15.74 0 10.9 5.55 20.52 13.97 26.17-5.15-.16-10-.55-14.35-1.38 0 .13 0 .26 0 .39 0 15.27 10.88 28 25.34 30.89-2.65.72-5.44 1.1-8.32 1.1-2.03 0-4.02-.2-5.95-.57 4.02 12.56 15.7 21.72 29.54 21.98-10.82 8.48-24.45 13.53-39.27 13.53-2.55 0-5.07-.15-7.53-.44 13.93 8.93 30.5 14.16 48.35 14.16"/></symbol>
+    <symbol id="iconYunohost" viewBox="0 0 128 128"><g fill="currentColor"><path d="M81.97 12.93c-.39.39-.68.82-.63.93.03.14-.08.23-.26.23-.14 0-.2.14-.12.31.09.17-.02.36-.23.45-.25.09-.39.2-.39.31 0 .14.06.17-.09.14-.23-.03-.2.2-.12.34.08.13.05.3-.12.42-.18.12-.24.31-.16.44.09.14.02.33-.17.42-.25.09-.4.28-.32.41.08.13-.02.3-.19.42-.17.11-.23.31-.15.44.08.12.02.3-.15.42-.17.11-.23.3-.15.43.08.12.02.3-.16.41-.18.11-.23.3-.15.43.08.13-.02.3-.19.41-.17.12-.23.31-.15.44.08.12.02.3-.15.42-.17.11-.23.3-.15.43.08.12.02.3-.16.41-.18.11-.23.3-.15.43.08.13-.02.3-.19.41-.17.12-.23.31-.15.44.08.12.02.3-.15.42-.17.11-.23.3-.15.43.08.12.02.3-.16.41-.18.11-.23.3-.15.43.08.13-.02.3-.19.41-.17.12-.23.31-.15.44.08.12.02.3-.15.42-.17.11-.23.3-.15.43.08.12.02.3-.16.41-.18.11-.23.3-.15.43.08.13-.02.3-.19.41-.17.12-.23.31-.15.44.08.12.02.3-.15.42-.17.11-.23.3-.15.43.08.12.02.3-.16.41-.18.11-.23.3-.15.43.08.13-.02.3-.19.41-.17.12-.23.31-.15.44.08.12.02.3-.15.42-.17.11-.23.3-.15.43.08.12.02.3-.16.41z"/></g></symbol>
+    <symbol id="iconYouTube" viewBox="0 0 24 24"><path fill="currentColor" d="M23.5 6.5c-.3-1.1-1.1-1.9-2.2-2.2C19.2 4 12 4 12 4s-7.2 0-9.3.3c-1.1.3-1.9 1.1-2.2 2.2C0 8.6 0 12 0 12s0 3.4.5 5.5c.3 1.1 1.1 1.9 2.2 2.2 2.1.3 9.3.3 9.3.3s7.2 0 9.3-.3c1.1-.3 1.9-1.1 2.2-2.2.5-2.1.5-5.5.5-5.5s0-3.4-.5-5.5zM9.5 15.5V8.5l6 3.5-6 3.5z"/></symbol>
+    <symbol id="iconBookmark" viewBox="0 0 24 24"><path fill="currentColor" d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></symbol>
+    <symbol id="iconSwap" viewBox="0 0 24 24"><path fill="currentColor" d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"/></symbol>
+  </defs>
+  <g transform="scale(0.8)">
+  <rect width="400" height="280" fill="#f8fafc"/>
+  <!-- Chunk 1: Header – reduced height; logo, search, nav, avatar centered on y=12 -->
+  <rect x="0" y="0" width="400" height="24" fill="#1e293b"/>
+  <text x="12" y="8" dominant-baseline="middle" fill="#818cf8" font-size="5" font-weight="700" font-family="Inter, system-ui, sans-serif">Influencer</text>
+  <text x="32" y="14" text-anchor="middle" dominant-baseline="middle" fill="#94a3b8" font-size="3.5" font-family="Inter, system-ui, sans-serif">Marketing</text>
+  <rect x="42" y="6" width="44" height="12" rx="3" fill="#334155"/>
+  <use href="#iconSearch" x="46" y="8" width="8" height="8" fill="#94a3b8"/>
+  <text x="56" y="12" dominant-baseline="middle" fill="#94a3b8" font-size="3.5" font-family="Inter, system-ui, sans-serif">Search...</text>
+  <text x="232" y="12" dominant-baseline="middle" fill="#cbd5e1" font-size="3.5" font-family="Inter, system-ui, sans-serif">Dashboard</text>
+  <text x="268" y="12" dominant-baseline="middle" fill="#cbd5e1" font-size="3.5" font-family="Inter, system-ui, sans-serif">Campaigns</text>
+  <text x="302" y="12" dominant-baseline="middle" fill="#cbd5e1" font-size="3.5" font-family="Inter, system-ui, sans-serif">Brand Profiles</text>
+  <text x="338" y="12" dominant-baseline="middle" fill="#cbd5e1" font-size="3.5" font-family="Inter, system-ui, sans-serif">Lists</text>
+  <text x="358" y="12" dominant-baseline="middle" fill="#cbd5e1" font-size="3.5" font-family="Inter, system-ui, sans-serif">Posts</text>
+  <circle cx="390" cy="12" r="5" fill="#6366f1"/>
+  <text x="390" y="12" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="3" font-weight="600" font-family="Inter, system-ui, sans-serif">U</text>
+  <!-- Chunk 2: Filter bar – reduced height, narrower items, right-aligned; spacing below -->
+  <rect x="0" y="24" width="400" height="14" fill="#334155"/>
+  <rect x="156" y="27" width="52" height="8" rx="2" fill="#475569"/>
+  <text x="182" y="31" text-anchor="middle" dominant-baseline="middle" fill="#e2e8f0" font-size="3" font-family="Inter, system-ui, sans-serif">PROFILE TYPE Any</text>
+  <rect x="212" y="27" width="32" height="8" rx="2" fill="#475569"/>
+  <text x="228" y="31" text-anchor="middle" dominant-baseline="middle" fill="#94a3b8" font-size="3" font-family="Inter, system-ui, sans-serif">LOCATION</text>
+  <rect x="248" y="27" width="26" height="8" rx="2" fill="#475569"/>
+  <text x="261" y="31" text-anchor="middle" dominant-baseline="middle" fill="#94a3b8" font-size="3" font-family="Inter, system-ui, sans-serif">TOPIC</text>
+  <rect x="278" y="27" width="20" height="8" rx="2" fill="#475569"/>
+  <text x="288" y="31" text-anchor="middle" dominant-baseline="middle" fill="#94a3b8" font-size="3" font-family="Inter, system-ui, sans-serif">AGE</text>
+  <rect x="302" y="27" width="32" height="8" rx="2" fill="#475569"/>
+  <text x="318" y="31" text-anchor="middle" dominant-baseline="middle" fill="#94a3b8" font-size="3" font-family="Inter, system-ui, sans-serif">INTEREST</text>
+  <rect x="338" y="27" width="52" height="8" rx="2" fill="#3b82f6"/>
+  <text x="364" y="31" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="3" font-weight="600" font-family="Inter, system-ui, sans-serif">Influencer Filters</text>
+  <!-- Main: left panel 6–260 (254w), gap 4, sidebar 264–394 (130w); y=42 (navbar+filter+spacing below filter) -->
+  <rect x="6" y="42" width="254" height="232" fill="white" stroke="#e2e8f0" stroke-width="1" filter="url(#jshadowDiscover)"/>
+  <rect x="264" y="42" width="130" height="232" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1" filter="url(#jshadowDiscover)"/>
+  <!-- Chunk 3: Controls – two rows -->
+  <g aria-label="List controls: results per page, select all, sort">
+    <rect x="6" y="42" width="254" height="32" fill="#f8fafc" stroke="none"/>
+    <line x1="6" y1="80" x2="260" y2="80" stroke="#e2e8f0" stroke-width="1"/>
+    <!-- Row 1: Show 25 results per page -->
+    <rect x="28" y="49" width="12" height="6" rx="1" fill="white" stroke="#e2e8f0" stroke-width="0.5"/>
+    <text fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif" dominant-baseline="middle">
+      <tspan x="14" y="53">Show </tspan>
+      <tspan x="34" y="53" text-anchor="middle">25</tspan>
+      <tspan x="44" y="53"> results per page</tspan>
+    </text>
+    <!-- Row 2: Select All (left), Sort by + dropdowns (right); checkbox and text vertically centred; dropdowns with chevrons -->
+    <rect x="14" y="61" width="6" height="6" rx="1" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="21" y="64" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">Select All</text>
+    <text x="168" y="64" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">Sort by</text>
+    <rect x="184" y="60" width="30" height="8" rx="2" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="197" y="64" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">Trending</text>
+    <use href="#chevronDown" x="208" y="61" width="5" height="5" fill="#94a3b8"/>
+    <rect x="222" y="60" width="28" height="8" rx="2" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="234" y="64" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">Overall</text>
+    <use href="#chevronDown" x="244" y="61" width="5" height="5" fill="#94a3b8"/>
+  </g>
+  <!-- Chunk 4: Cards -->
+  <rect x="14" y="82" width="242" height="42" rx="2" fill="#fafafa" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="16" y="84" width="6" height="6" rx="1" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="38" cy="99" r="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+  <use href="#avatarDiscover" x="28" y="89" width="20" height="20" fill="#f472b6"/>
+  <text x="56" y="93" dominant-baseline="middle" fill="#94a3b8" font-size="4" font-family="Inter, system-ui, sans-serif">MUSICIAN</text>
+  <text x="56" y="99" dominant-baseline="middle" fill="#1e293b" font-size="5" font-weight="600" font-family="Inter, system-ui, sans-serif">Lifestyle Emma</text>
+  <text x="56" y="105" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">New York, NY</text>
+  <line x1="14" y1="113" x2="256" y2="113" stroke="#e2e8f0" stroke-width="1"/>
+  <g fill="#64748b"><use href="#iconInstagram" x="56" y="116" width="6" height="6"/><text x="63" y="119" dominant-baseline="middle" font-size="4" font-family="Inter, system-ui, sans-serif">5.3m</text><use href="#iconYouTube" x="76" y="116" width="6" height="6"/><text x="83" y="119" dominant-baseline="middle" font-size="4" font-family="Inter, system-ui, sans-serif">3.2m</text><use href="#iconTwitter" x="98" y="116" width="6" height="6"/><text x="105" y="119" dominant-baseline="middle" font-size="4" font-family="Inter, system-ui, sans-serif">653k</text></g>
+  <text x="252" y="99" text-anchor="end" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">Appearance: $100k</text>
+  <circle cx="250" cy="85" r="0.8" fill="#94a3b8"/><circle cx="252" cy="85" r="0.8" fill="#94a3b8"/><circle cx="254" cy="85" r="0.8" fill="#94a3b8"/>
+  <rect x="14" y="126" width="242" height="42" rx="2" fill="#fafafa" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="16" y="128" width="6" height="6" rx="1" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="38" cy="143" r="10" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/>
+  <use href="#avatarDiscover" x="28" y="133" width="20" height="20" fill="#a78bfa"/>
+  <text x="56" y="137" dominant-baseline="middle" fill="#94a3b8" font-size="4" font-family="Inter, system-ui, sans-serif">TECH</text>
+  <text x="56" y="143" dominant-baseline="middle" fill="#1e293b" font-size="5" font-weight="600" font-family="Inter, system-ui, sans-serif">Tech Reviews</text>
+  <text x="56" y="149" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">San Francisco, CA</text>
+  <line x1="14" y1="157" x2="256" y2="157" stroke="#e2e8f0" stroke-width="1"/>
+  <g fill="#64748b"><use href="#iconInstagram" x="56" y="160" width="6" height="6"/><text x="63" y="163" dominant-baseline="middle" font-size="4" font-family="Inter, system-ui, sans-serif">2.1m</text><use href="#iconTwitter" x="76" y="160" width="6" height="6"/><text x="83" y="163" dominant-baseline="middle" font-size="4" font-family="Inter, system-ui, sans-serif">890k</text></g>
+  <text x="252" y="143" text-anchor="end" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">Appearance: $25k</text>
+  <circle cx="250" cy="129" r="0.8" fill="#94a3b8"/><circle cx="252" cy="129" r="0.8" fill="#94a3b8"/><circle cx="254" cy="129" r="0.8" fill="#94a3b8"/>
+  <rect x="14" y="170" width="242" height="42" rx="2" fill="#fafafa" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="16" y="172" width="6" height="6" rx="1" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="38" cy="187" r="10" fill="#f0fdf4" stroke="#a7f3d0" stroke-width="1"/>
+  <use href="#avatarDiscover" x="28" y="177" width="20" height="20" fill="#34d399"/>
+  <text x="56" y="181" dominant-baseline="middle" fill="#94a3b8" font-size="4" font-family="Inter, system-ui, sans-serif">PHOTOGRAPHY</text>
+  <text x="56" y="187" dominant-baseline="middle" fill="#1e293b" font-size="5" font-weight="600" font-family="Inter, system-ui, sans-serif">Photo Studio NYC</text>
+  <text x="56" y="193" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">Brooklyn, NY</text>
+  <line x1="14" y1="201" x2="256" y2="201" stroke="#e2e8f0" stroke-width="1"/>
+  <g fill="#64748b"><use href="#iconInstagram" x="56" y="204" width="6" height="6"/><text x="63" y="207" dominant-baseline="middle" font-size="4" font-family="Inter, system-ui, sans-serif">256k</text><use href="#iconYouTube" x="76" y="204" width="6" height="6"/><text x="83" y="207" dominant-baseline="middle" font-size="4" font-family="Inter, system-ui, sans-serif">124k</text></g>
+  <text x="252" y="187" text-anchor="end" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">Appearance: $50k</text>
+  <circle cx="250" cy="173" r="0.8" fill="#94a3b8"/><circle cx="252" cy="173" r="0.8" fill="#94a3b8"/><circle cx="254" cy="173" r="0.8" fill="#94a3b8"/>
+  <rect x="14" y="214" width="242" height="42" rx="2" fill="#fafafa" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="16" y="216" width="6" height="6" rx="1" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="38" cy="231" r="10" fill="#fef9c3" stroke="#fde047" stroke-width="1"/>
+  <use href="#avatarDiscover" x="28" y="221" width="20" height="20" fill="#eab308"/>
+  <text x="56" y="225" dominant-baseline="middle" fill="#94a3b8" font-size="4" font-family="Inter, system-ui, sans-serif">INFLUENCER</text>
+  <text x="56" y="231" dominant-baseline="middle" fill="#1e293b" font-size="5" font-weight="600" font-family="Inter, system-ui, sans-serif">Foodie Travels</text>
+  <text x="56" y="237" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">Austin, TX</text>
+  <line x1="14" y1="245" x2="256" y2="245" stroke="#e2e8f0" stroke-width="1"/>
+  <g fill="#64748b"><use href="#iconInstagram" x="56" y="248" width="6" height="6"/><text x="63" y="251" dominant-baseline="middle" font-size="4" font-family="Inter, system-ui, sans-serif">89k</text><use href="#iconFacebook" x="78" y="248" width="6" height="6"/><text x="85" y="251" dominant-baseline="middle" font-size="4" font-family="Inter, system-ui, sans-serif">45k</text></g>
+  <text x="252" y="231" text-anchor="end" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">Appearance: $10k</text>
+  <circle cx="250" cy="217" r="0.8" fill="#94a3b8"/><circle cx="252" cy="217" r="0.8" fill="#94a3b8"/><circle cx="254" cy="217" r="0.8" fill="#94a3b8"/>
+  <!-- Chunk 5: Sidebar -->
+  <text x="272" y="54" dominant-baseline="middle" fill="#0f172a" font-size="6" font-weight="600" font-family="Inter, system-ui, sans-serif">Refine Results</text>
+  <use href="#iconBookmark" x="366" y="50" width="8" height="8" fill="#64748b"/>
+  <use href="#iconSwap" x="374" y="50" width="8" height="8" fill="#64748b"/>
+  <text x="272" y="66" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">1–25</text>
+  <text x="272" y="80" dominant-baseline="middle" fill="#475569" font-size="5" font-weight="600" font-family="Inter, system-ui, sans-serif">Audience Filters</text>
+  <rect x="272" y="84" width="100" height="12" rx="2" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="278" y="90" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">Platform</text>
+  <use href="#chevronDown" x="364" y="87" width="8" height="8" fill="#94a3b8"/>
+  <rect x="272" y="106" width="100" height="12" rx="2" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="278" y="112" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">Age</text>
+  <use href="#chevronDown" x="364" y="109" width="8" height="8" fill="#94a3b8"/>
+  <rect x="272" y="120" width="100" height="12" rx="2" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="278" y="126" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">Brands</text>
+  <use href="#chevronDown" x="364" y="123" width="8" height="8" fill="#94a3b8"/>
+  <rect x="272" y="134" width="100" height="12" rx="2" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="278" y="140" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">Ethnicity</text>
+  <use href="#chevronDown" x="364" y="137" width="8" height="8" fill="#94a3b8"/>
+  <rect x="272" y="148" width="100" height="12" rx="2" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="278" y="154" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">Gender</text>
+  <use href="#chevronDown" x="364" y="151" width="8" height="8" fill="#94a3b8"/>
+  <rect x="272" y="162" width="100" height="12" rx="2" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="278" y="168" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">Income</text>
+  <use href="#chevronDown" x="364" y="165" width="8" height="8" fill="#94a3b8"/>
+  <rect x="272" y="176" width="100" height="12" rx="2" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="278" y="182" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">Interests</text>
+  <use href="#chevronDown" x="364" y="179" width="8" height="8" fill="#94a3b8"/>
+  <rect x="272" y="190" width="100" height="12" rx="2" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="278" y="196" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">Location</text>
+  <use href="#chevronDown" x="364" y="193" width="8" height="8" fill="#94a3b8"/>
+  <text x="272" y="210" dominant-baseline="middle" fill="#475569" font-size="5" font-weight="600" font-family="Inter, system-ui, sans-serif">Social Reach &amp; Engagement</text>
+  <rect x="272" y="214" width="100" height="12" rx="2" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="278" y="220" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">Overall</text>
+  <use href="#chevronDown" x="364" y="217" width="8" height="8" fill="#94a3b8"/>
+  <rect x="272" y="228" width="100" height="12" rx="2" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="278" y="234" dominant-baseline="middle" fill="#64748b" font-size="4" font-family="Inter, system-ui, sans-serif">IG · X · Facebook</text>
+  <use href="#chevronDown" x="364" y="231" width="8" height="8" fill="#94a3b8"/>
+  <rect x="272" y="244" width="100" height="14" rx="2" fill="#334155"/>
+  <text x="322" y="251" text-anchor="middle" dominant-baseline="middle" fill="#e2e8f0" font-size="4" font-family="Inter, system-ui, sans-serif">Report an Issue</text>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <defs>
+    <filter id="vca-analytics-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <!-- Page: 24px margin left & right; content width 352 (24 to 376) -->
+  <rect width="400" height="280" rx="10" fill="#f8fafc"/>
+  <!-- Header: 24px padding each side -->
+  <rect x="0" y="0" width="400" height="48" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1" filter="url(#vca-analytics-shadow)"/>
+  <text x="24" y="32" fill="#1e293b" font-size="12" font-weight="600" font-family="system-ui, sans-serif">Vehicle crash analytics</text>
+  <rect x="268" y="12" width="108" height="24" rx="6" fill="#2563eb"/>
+  <text x="322" y="24" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="10" font-weight="500" font-family="system-ui, sans-serif">Export PDF</text>
+  <!-- Main card: 24px margin, 16px padding inside so content 40–360 (width 320) -->
+  <rect x="24" y="56" width="352" height="208" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1" filter="url(#vca-analytics-shadow)"/>
+  <text x="40" y="80" fill="#1e293b" font-size="10" font-weight="600" font-family="system-ui, sans-serif">Crash records · Filterable</text>
+  <!-- Search + filters: 16px padding each side; Date ends at 360 -->
+  <rect x="40" y="90" width="192" height="26" rx="6" fill="#f1f5f9"/>
+  <text x="52" y="105" dominant-baseline="middle" fill="#94a3b8" font-size="9" font-family="system-ui, sans-serif">Search...</text>
+  <rect x="240" y="90" width="56" height="26" rx="4" fill="#e2e8f0"/>
+  <text x="268" y="105" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">Region</text>
+  <rect x="304" y="90" width="56" height="26" rx="4" fill="#e2e8f0"/>
+  <text x="332" y="105" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">Date</text>
+  <!-- Table: width 320 (40–360). Cols: ID(40–108) Date(108–168) Region(168–228) Severity(228–288) Vehicles(288–360) -->
+  <rect x="40" y="124" width="320" height="26" rx="4" fill="#f1f5f9"/>
+  <text x="56" y="137" dominant-baseline="middle" fill="#64748b" font-size="9" font-weight="600" font-family="system-ui, sans-serif">ID</text>
+  <text x="138" y="137" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-weight="600" font-family="system-ui, sans-serif">Date</text>
+  <text x="198" y="137" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-weight="600" font-family="system-ui, sans-serif">Region</text>
+  <text x="258" y="137" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-weight="600" font-family="system-ui, sans-serif">Severity</text>
+  <text x="324" y="137" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-weight="600" font-family="system-ui, sans-serif">Vehicles</text>
+  <!-- Row 1: ID 56–108, Date center 138, Region 198, Severity 258, Vehicles 324 -->
+  <rect x="40" y="154" width="320" height="26" rx="4" fill="#f8fafc"/>
+  <text x="56" y="167" dominant-baseline="middle" fill="#1e293b" font-size="9" font-family="system-ui, sans-serif">CR-001</text>
+  <text x="138" y="167" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">12-Jan-24</text>
+  <text x="198" y="167" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">North</text>
+  <rect x="236" y="161" width="44" height="18" rx="4" fill="#fef2f2"/>
+  <text x="258" y="170" text-anchor="middle" dominant-baseline="middle" fill="#b91c1c" font-size="8" font-weight="500" font-family="system-ui, sans-serif">High</text>
+  <text x="324" y="167" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">2</text>
+  <!-- Row 2 -->
+  <rect x="40" y="184" width="320" height="26" rx="4" fill="white"/>
+  <text x="56" y="197" dominant-baseline="middle" fill="#1e293b" font-size="9" font-family="system-ui, sans-serif">CR-002</text>
+  <text x="138" y="197" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">11-Jan-24</text>
+  <text x="198" y="197" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">South</text>
+  <rect x="236" y="191" width="44" height="18" rx="4" fill="#fef3c7"/>
+  <text x="258" y="200" text-anchor="middle" dominant-baseline="middle" fill="#92400e" font-size="8" font-weight="500" font-family="system-ui, sans-serif">Medium</text>
+  <text x="324" y="197" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">1</text>
+  <!-- Footer: width 320, 16px padding each side; pagination 16px from right -->
+  <rect x="40" y="214" width="320" height="38" rx="4" fill="#f1f5f9"/>
+  <text x="56" y="228" dominant-baseline="middle" fill="#64748b" font-size="8" font-family="system-ui, sans-serif">1–10 of 248 · Debounced search</text>
+  <!-- Pagination: text only; current page bold -->
+  <text x="264" y="231" text-anchor="middle" dominant-baseline="middle" fill="#94a3b8" font-size="10" font-family="system-ui, sans-serif">‹</text>
+  <text x="292" y="231" text-anchor="middle" dominant-baseline="middle" fill="#1e293b" font-size="10" font-weight="600" font-family="system-ui, sans-serif">1</text>
+  <text x="320" y="231" text-anchor="middle" dominant-baseline="middle" fill="#94a3b8" font-size="10" font-family="system-ui, sans-serif">2</text>
+  <text x="348" y="231" text-anchor="middle" dominant-baseline="middle" fill="#94a3b8" font-size="10" font-family="system-ui, sans-serif">›</text>
+</svg>

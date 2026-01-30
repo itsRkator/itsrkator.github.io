@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <defs>
+    <filter id="voting-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <!-- Page: 24px margin -->
+  <rect width="400" height="280" rx="10" fill="#f1f5f9"/>
+  <!-- Header: 48px height, 24px padding -->
+  <rect x="0" y="0" width="400" height="48" rx="10" fill="white" filter="url(#voting-shadow)"/>
+  <text x="24" y="32" fill="#1e293b" font-size="14" font-weight="600" font-family="system-ui, sans-serif">Vote</text>
+  <!-- Card: 24px margin, 24px padding, content width 304; height 216 so content fits -->
+  <rect x="24" y="60" width="352" height="216" rx="8" fill="white" filter="url(#voting-shadow)"/>
+  <text x="48" y="88" fill="#1e293b" font-size="13" font-weight="600" font-family="system-ui, sans-serif">Team feedback Q1 2024</text>
+  <text x="48" y="106" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">Select one option. Your vote is anonymous.</text>
+  <!-- Options: 48+16=64 radio, 80 text; 32px row height, 8px gap -->
+  <rect x="48" y="120" width="304" height="32" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="64" cy="136" r="10" fill="white" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="64" cy="136" r="5" fill="#2563eb"/>
+  <text x="80" y="136" dominant-baseline="middle" fill="#1e293b" font-size="11" font-weight="500" font-family="system-ui, sans-serif">Option A — Improve performance</text>
+  <rect x="48" y="160" width="304" height="32" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <circle cx="64" cy="176" r="10" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="80" y="176" dominant-baseline="middle" fill="#64748b" font-size="11" font-family="system-ui, sans-serif">Option B — New dashboard</text>
+  <rect x="48" y="200" width="304" height="32" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <circle cx="64" cy="216" r="10" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="80" y="216" dominant-baseline="middle" fill="#64748b" font-size="11" font-family="system-ui, sans-serif">Option C — Bug fixes first</text>
+  <!-- Submit: 8px gap below options (232), 24px from content right -->
+  <rect x="248" y="240" width="104" height="28" rx="6" fill="#2563eb"/>
+  <text x="300" y="254" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="11" font-weight="600" font-family="system-ui, sans-serif">Submit vote</text>
+</svg>

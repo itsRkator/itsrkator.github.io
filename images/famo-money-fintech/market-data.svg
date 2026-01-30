@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none" role="img" aria-labelledby="market-data-title market-data-desc">
+  <title id="market-data-title">Market data · Portfolio valuation</title>
+  <desc id="market-data-desc">Live portfolio value vs benchmark over time. Real-time market data for family asset valuation.</desc>
+  <defs>
+    <filter id="fshadowMkt" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="fgradMkt" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="280" rx="10" fill="#f8fafc"/>
+  <!-- Header: 44px; title left 24px, stays within 24–376 (before card edge) -->
+  <rect x="0" y="0" width="400" height="44" rx="10" fill="white" filter="url(#fshadowMkt)"/>
+  <text x="24" y="22" dominant-baseline="middle" fill="#0f172a" font-size="12" font-weight="600" font-family="Inter, system-ui, -apple-system, sans-serif" letter-spacing="0.02em">Market data · Portfolio valuation</text>
+  <!-- Card: 24px margin, 8px below header; content 40–352 (16px padding) -->
+  <rect x="24" y="52" width="352" height="212" rx="8" fill="white" filter="url(#fshadowMkt)" stroke="#e2e8f0" stroke-width="1"/>
+  <!-- Title + KPI: 16px from card top; KPI ends at 352 (inside content) -->
+  <text x="40" y="76" dominant-baseline="middle" fill="#1e293b" font-size="10" font-weight="600" font-family="Inter, system-ui, sans-serif">Live portfolio</text>
+  <rect x="280" y="68" width="72" height="22" rx="4" fill="#dcfce7"/>
+  <text x="316" y="79" text-anchor="middle" dominant-baseline="middle" fill="#15803d" font-size="9" font-weight="600" font-family="Inter, system-ui, sans-serif">+ 8.2%</text>
+  <!-- Chart area: 40–352 (312px), 96–184; lines inset 8px so stroke does not bleed -->
+  <rect x="40" y="96" width="312" height="88" rx="4" fill="#f8fafc"/>
+  <polyline points="48,170 72,164 96,168 120,158 144,162 168,152 192,156 216,148 240,152 264,142 288,146 312,136 336,132 352,128" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="48,176 72,172 96,174 120,168 144,170 168,164 192,166 216,160 240,162 264,156 288,158 312,152 336,150 352,146" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- X-axis: 12px below chart; 4 labels evenly across chart with equal left/right margin (40–352) -->
+  <text x="102" y="200" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="8" font-family="Inter, system-ui, sans-serif">Jan</text>
+  <text x="165" y="200" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="8" font-family="Inter, system-ui, sans-serif">Feb</text>
+  <text x="228" y="200" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="8" font-family="Inter, system-ui, sans-serif">Mar</text>
+  <text x="290" y="200" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="8" font-family="Inter, system-ui, sans-serif">Apr</text>
+  <!-- Legend: bar center 224 (212+12); swatch and text vertically centered -->
+  <rect x="40" y="212" width="124" height="24" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="52" y="219" width="10" height="10" rx="2" fill="#22c55e"/>
+  <text x="68" y="224" dominant-baseline="middle" fill="#1e293b" font-size="7" font-weight="500" font-family="Inter, system-ui, sans-serif">Value</text>
+  <rect x="100" y="219" width="10" height="10" rx="2" fill="#ef4444"/>
+  <text x="116" y="224" dominant-baseline="middle" fill="#1e293b" font-size="7" font-weight="500" font-family="Inter, system-ui, sans-serif">Benchmark</text>
+</svg>

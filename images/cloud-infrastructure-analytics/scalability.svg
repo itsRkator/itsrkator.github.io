@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none" role="img" aria-labelledby="scalability-title scalability-desc">
+  <title id="scalability-title">Scalability and performance: horizontal scaling diagram</title>
+  <desc id="scalability-desc">Traffic flows to a load balancer, which distributes to three instances within a scaling boundary. Key concepts: scale out, load balancing, high availability.</desc>
+  <defs>
+    <filter id="gshadowScal" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrowScal" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto">
+      <path d="M0 0 L6 3 L0 6 z" fill="#22c55e" stroke="none"/>
+    </marker>
+    <marker id="arrowScalSlate" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto">
+      <path d="M0 0 L6 3 L0 6 z" fill="#94a3b8" stroke="none"/>
+    </marker>
+    <symbol id="instanceUnitScal" viewBox="0 0 24 24">
+      <rect x="2" y="4" width="20" height="6" rx="2" fill="#1e40af"/>
+      <circle cx="12" cy="7" r="1.5" fill="white"/>
+      <rect x="2" y="14" width="20" height="6" rx="2" fill="#1e40af"/>
+      <circle cx="12" cy="17" r="1.5" fill="white"/>
+    </symbol>
+    <!-- Load balancer: top block (two-tone) → vertical bar → horizontal distributor → three two-tone blocks -->
+    <symbol id="loadBalancerIcon" viewBox="0 0 24 24">
+      <!-- Top layer: single wide block, lighter left / darker right -->
+      <rect x="2" y="0" width="10" height="5" rx="0.5" fill="#93c5fd"/>
+      <rect x="12" y="0" width="10" height="5" rx="0.5" fill="#2563eb"/>
+      <!-- Vertical bar from center down -->
+      <rect x="10" y="5" width="4" height="4" fill="#2563eb"/>
+      <!-- Horizontal distributor bar -->
+      <rect x="2" y="9" width="20" height="3" rx="0.5" fill="#2563eb"/>
+      <!-- Bottom layer: three blocks (4×6 each), equally spaced at 4, 10, 16; each two-tone -->
+      <rect x="4" y="14" width="2" height="6" rx="0.5" fill="#93c5fd"/>
+      <rect x="6" y="14" width="2" height="6" rx="0.5" fill="#2563eb"/>
+      <rect x="10" y="14" width="2" height="6" rx="0.5" fill="#93c5fd"/>
+      <rect x="12" y="14" width="2" height="6" rx="0.5" fill="#2563eb"/>
+      <rect x="16" y="14" width="2" height="6" rx="0.5" fill="#93c5fd"/>
+      <rect x="18" y="14" width="2" height="6" rx="0.5" fill="#2563eb"/>
+    </symbol>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="280" rx="10" fill="#f8fafc"/>
+  <rect x="0" y="0" width="400" height="44" rx="10" fill="white" filter="url(#gshadowScal)"/>
+  <text x="200" y="22" text-anchor="middle" dominant-baseline="middle" fill="#0f172a" font-size="12" font-weight="600" font-family="Inter, system-ui, -apple-system, sans-serif" letter-spacing="0.02em">Scalability &amp; performance</text>
+
+  <!-- Content card -->
+  <rect x="24" y="52" width="352" height="212" rx="8" fill="white" filter="url(#gshadowScal)" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Subtitle -->
+  <text x="200" y="64" text-anchor="middle" dominant-baseline="middle" fill="#334155" font-size="10" font-weight="600" font-family="Inter, system-ui, -apple-system, sans-serif" letter-spacing="0.01em">Horizontal scaling (scale out)</text>
+
+  <!-- Green dashed boundary; instance boxes 38×38, icon 26×26 -->
+  <rect x="94" y="74" width="212" height="56" rx="6" fill="#f0fdf4" stroke="#15803d" stroke-width="1.2" stroke-dasharray="4 2"/>
+
+  <rect x="102" y="82" width="38" height="38" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.2"/>
+  <use href="#instanceUnitScal" x="108" y="88" width="26" height="26"/>
+  <text x="121" y="118" text-anchor="middle" dominant-baseline="middle" fill="#1e40af" font-size="6" font-weight="600" font-family="Inter, system-ui, -apple-system, sans-serif">Instance 1</text>
+  <rect x="181" y="82" width="38" height="38" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.2"/>
+  <use href="#instanceUnitScal" x="187" y="88" width="26" height="26"/>
+  <text x="200" y="118" text-anchor="middle" dominant-baseline="middle" fill="#1e40af" font-size="6" font-weight="600" font-family="Inter, system-ui, -apple-system, sans-serif">Instance 2</text>
+  <rect x="260" y="82" width="38" height="38" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.2"/>
+  <use href="#instanceUnitScal" x="266" y="88" width="26" height="26"/>
+  <text x="279" y="118" text-anchor="middle" dominant-baseline="middle" fill="#1e40af" font-size="6" font-weight="600" font-family="Inter, system-ui, -apple-system, sans-serif">Instance 3</text>
+
+  <!-- Load balancer: 48×28 rect; icon 36×18 -->
+  <rect x="176" y="178" width="48" height="28" rx="5" fill="white" stroke="#22c55e" stroke-width="1.2"/>
+  <use href="#loadBalancerIcon" x="180" y="183" width="36" height="18"/>
+  <text x="200" y="204" text-anchor="middle" dominant-baseline="middle" fill="#166534" font-size="6" font-weight="600" font-family="Inter, system-ui, -apple-system, sans-serif">Load balancer</text>
+
+  <!-- Arrows: stem up from LB top → horizontal bar → three verticals to instances -->
+  <path d="M 200 178 L 200 156" stroke="#22c55e" stroke-width="1.2" stroke-dasharray="3 2" stroke-linecap="round"/>
+  <path d="M 121 156 L 279 156" stroke="#22c55e" stroke-width="1.2" stroke-dasharray="3 2" stroke-linecap="round"/>
+  <path d="M 121 156 L 121 120" stroke="#22c55e" stroke-width="1.2" stroke-dasharray="3 2" stroke-linecap="round" marker-end="url(#arrowScal)"/>
+  <path d="M 200 156 L 200 120" stroke="#22c55e" stroke-width="1.2" stroke-dasharray="3 2" stroke-linecap="round" marker-end="url(#arrowScal)"/>
+  <path d="M 279 156 L 279 120" stroke="#22c55e" stroke-width="1.2" stroke-dasharray="3 2" stroke-linecap="round" marker-end="url(#arrowScal)"/>
+
+  <!-- Traffic -->
+  <path d="M 200 228 L 200 206" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 3" stroke-linecap="round" marker-end="url(#arrowScalSlate)"/>
+  <text x="200" y="236" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="8" font-weight="600" font-family="Inter, system-ui, -apple-system, sans-serif" letter-spacing="0.04em">Traffic</text>
+
+  <!-- Footer -->
+  <rect x="24" y="252" width="352" height="12" rx="0 0 8 8" fill="#f1f5f9"/>
+  <text x="200" y="258" text-anchor="middle" dominant-baseline="middle" fill="#475569" font-size="8" font-weight="500" font-family="Inter, system-ui, -apple-system, sans-serif" letter-spacing="0.02em">Scale out • Load balancing • High availability</text>
+</svg>

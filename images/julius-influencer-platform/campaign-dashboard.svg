@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none" role="img" aria-labelledby="campaign-dash-title campaign-dash-desc">
+  <title id="campaign-dash-title">Julius · Campaigns</title>
+  <desc id="campaign-dash-desc">Campaign dashboard: campaign cards (Summer 2024 Launch, Product Drop Q2) and campaign performance metrics (impressions, clicks, CTR, spend).</desc>
+  <defs>
+    <filter id="jshadowCamp" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+    <clipPath id="campClip">
+      <rect x="26" y="54" width="348" height="218" rx="6"/>
+    </clipPath>
+  </defs>
+  <rect width="400" height="280" rx="10" fill="#0f172a"/>
+  <!-- Header: 44px, 16px padding -->
+  <rect x="0" y="0" width="400" height="44" rx="10" fill="#1e293b"/>
+  <text x="24" y="22" dominant-baseline="middle" fill="white" font-size="12" font-weight="600" font-family="Inter, system-ui, -apple-system, sans-serif" letter-spacing="0.02em">Julius · Campaigns</text>
+  <rect x="300" y="10" width="76" height="24" rx="6" fill="#3b82f6"/>
+  <text x="338" y="22" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="9" font-weight="600" font-family="Inter, system-ui, sans-serif">+ Campaign</text>
+  <!-- Campaign cards: 24px margin, 8px below header; content 44–356 -->
+  <g clip-path="url(#campClip)">
+    <rect x="24" y="52" width="164" height="88" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" filter="url(#jshadowCamp)"/>
+    <text x="40" y="74" dominant-baseline="middle" fill="#94a3b8" font-size="10" font-family="Inter, system-ui, sans-serif">Summer 2024 Launch</text>
+    <rect x="40" y="84" width="52" height="18" rx="4" fill="#22c55e"/>
+    <text x="66" y="93" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="8" font-weight="600" font-family="Inter, system-ui, sans-serif">Live</text>
+    <text x="40" y="114" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="Inter, system-ui, sans-serif">Reach: 2.4M</text>
+    <text x="40" y="128" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="Inter, system-ui, sans-serif">Engagement: 8.2%</text>
+    <rect x="196" y="52" width="164" height="88" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" filter="url(#jshadowCamp)"/>
+    <text x="212" y="74" dominant-baseline="middle" fill="#94a3b8" font-size="10" font-family="Inter, system-ui, sans-serif">Product Drop Q2</text>
+    <rect x="212" y="84" width="52" height="18" rx="4" fill="#eab308"/>
+    <text x="238" y="93" text-anchor="middle" dominant-baseline="middle" fill="#0f172a" font-size="8" font-weight="600" font-family="Inter, system-ui, sans-serif">Draft</text>
+    <text x="212" y="114" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="Inter, system-ui, sans-serif">Influencers: 12</text>
+    <text x="212" y="128" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="Inter, system-ui, sans-serif">Budget: $24k</text>
+    <!-- Metrics card: 12px below campaign cards; 24,168 332x88 (ends 356) -->
+    <rect x="24" y="152" width="332" height="88" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" filter="url(#jshadowCamp)"/>
+    <text x="40" y="174" dominant-baseline="middle" fill="#94a3b8" font-size="10" font-weight="600" font-family="Inter, system-ui, sans-serif">Campaign performance</text>
+    <rect x="40" y="184" width="70" height="44" rx="6" fill="#334155"/>
+    <text x="75" y="202" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="13" font-weight="700" font-family="Inter, system-ui, sans-serif">1.2M</text>
+    <text x="75" y="218" text-anchor="middle" dominant-baseline="middle" fill="#94a3b8" font-size="8" font-family="Inter, system-ui, sans-serif">Impressions</text>
+    <rect x="118" y="184" width="70" height="44" rx="6" fill="#334155"/>
+    <text x="153" y="202" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="13" font-weight="700" font-family="Inter, system-ui, sans-serif">48k</text>
+    <text x="153" y="218" text-anchor="middle" dominant-baseline="middle" fill="#94a3b8" font-size="8" font-family="Inter, system-ui, sans-serif">Clicks</text>
+    <rect x="196" y="184" width="70" height="44" rx="6" fill="#334155"/>
+    <text x="231" y="202" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="13" font-weight="700" font-family="Inter, system-ui, sans-serif">6.4%</text>
+    <text x="231" y="218" text-anchor="middle" dominant-baseline="middle" fill="#94a3b8" font-size="8" font-family="Inter, system-ui, sans-serif">CTR</text>
+    <rect x="274" y="184" width="70" height="44" rx="6" fill="#334155"/>
+    <text x="309" y="202" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="13" font-weight="700" font-family="Inter, system-ui, sans-serif">$18k</text>
+    <text x="309" y="218" text-anchor="middle" dominant-baseline="middle" fill="#94a3b8" font-size="8" font-family="Inter, system-ui, sans-serif">Spend</text>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <defs>
+    <filter id="websocket-arch-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+    <marker id="websocket-arch-arrow" markerWidth="4" markerHeight="3" refX="3" refY="1.5" orient="auto">
+      <polygon points="0 0, 4 1.5, 0 3" fill="#64748b"/>
+    </marker>
+    <marker id="websocket-arch-arrow-green" markerWidth="4" markerHeight="3" refX="3" refY="1.5" orient="auto">
+      <polygon points="0 0, 4 1.5, 0 3" fill="#16a34a"/>
+    </marker>
+  </defs>
+  <!-- Page: 24px margin -->
+  <rect width="400" height="280" rx="10" fill="#f8fafc"/>
+  <!-- Header: 48px height, 24px padding -->
+  <rect x="0" y="0" width="400" height="48" rx="10" fill="white"/>
+  <text x="24" y="32" fill="#1e293b" font-size="14" font-weight="600" font-family="system-ui, sans-serif">Architecture · Horizontal scale</text>
+  <!-- Client apps: red border; card title 12px, subtitle 10px -->
+  <rect x="40" y="56" width="112" height="56" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="2" filter="url(#websocket-arch-shadow)"/>
+  <text x="96" y="74" text-anchor="middle" dominant-baseline="middle" fill="#1e293b" font-size="12" font-weight="600" font-family="system-ui, sans-serif">Angular SPA</text>
+  <text x="96" y="92" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">REST + WebSocket</text>
+  <rect x="248" y="56" width="112" height="56" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="2" filter="url(#websocket-arch-shadow)"/>
+  <text x="304" y="74" text-anchor="middle" dominant-baseline="middle" fill="#1e293b" font-size="12" font-weight="600" font-family="system-ui, sans-serif">NestJS</text>
+  <text x="304" y="92" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">REST API</text>
+  <!-- Gateway: blue; title 12px, subtitle 10px -->
+  <rect x="130" y="144" width="140" height="56" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2" filter="url(#websocket-arch-shadow)"/>
+  <text x="200" y="162" text-anchor="middle" dominant-baseline="middle" fill="#1e293b" font-size="12" font-weight="600" font-family="system-ui, sans-serif">Socket.IO Gateway</text>
+  <text x="200" y="178" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">Rooms · Typing · Presence</text>
+  <!-- Redis: green; title 12px, subtitle 10px -->
+  <rect x="130" y="228" width="140" height="44" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5" filter="url(#websocket-arch-shadow)"/>
+  <text x="200" y="246" text-anchor="middle" dominant-baseline="middle" fill="#15803d" font-size="12" font-weight="600" font-family="system-ui, sans-serif">Redis adapter</text>
+  <text x="200" y="260" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">Stateless · Scale out</text>
+  <!-- Arrows: REST API Angular → NestJS (solid); WebSocket to Gateway (dashed); Gateway → Redis (green) -->
+  <path d="M152 84 L248 84" stroke="#2563eb" stroke-width="1.5" marker-end="url(#websocket-arch-arrow)"/>
+  <text x="200" y="78" text-anchor="middle" fill="#2563eb" font-size="9" font-weight="500" font-family="system-ui, sans-serif">REST API</text>
+  <path d="M152 112 L200 144" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 2" marker-end="url(#websocket-arch-arrow)"/>
+  <path d="M248 112 L200 144" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 2" marker-end="url(#websocket-arch-arrow)"/>
+  <path d="M200 200 L200 228" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="3 2" marker-end="url(#websocket-arch-arrow-green)"/>
+</svg>

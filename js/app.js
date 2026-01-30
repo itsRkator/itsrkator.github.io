@@ -1,53 +1,56 @@
-window.addEventListener('load', fn, false)
+window.addEventListener('load', fn, false);
 
-//  window.onload = function loader() {
 function fn() {
-    // Preloader
-    setTimeout(() => {
-        document.getElementById('preloader').style.visibility = 'hidden';
-        document.getElementById('preloader').style.opacity = '0';
-    }, 350);
-}
-
-// Menu sticky
-function windowScroll() {
-    const navbar = document.getElementById("navbar");
-    if (
-        document.body.scrollTop >= 50 ||
-        document.documentElement.scrollTop >= 50
-    ) {
-        navbar.classList.add("nav-sticky");
-    } else {
-        navbar.classList.remove("nav-sticky");
+    var preloader = document.getElementById('preloader');
+    if (preloader) {
+        setTimeout(function () {
+            preloader.style.visibility = 'hidden';
+            preloader.style.opacity = '0';
+        }, 350);
     }
 }
 
-window.addEventListener('scroll', (ev) => {
-    ev.preventDefault();
-    windowScroll();
-})
-
-
-// Back-to-top
-var mybutton = document.getElementById("back-to-top");
-window.onscroll = function () {
-    scrollFunction();
-};
-
-function scrollFunction() {
-    if (mybutton != null) {
-        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-            mybutton.style.display = "block";
+// Menu sticky + back-to-top visibility (single scroll listener)
+function windowScroll() {
+    var navbar = document.getElementById('navbar');
+    var scrollY = document.body.scrollTop || document.documentElement.scrollTop;
+    if (navbar) {
+        if (scrollY >= 50) {
+            navbar.classList.add('nav-sticky');
         } else {
-            mybutton.style.display = "none";
+            navbar.classList.remove('nav-sticky');
         }
     }
+    var backToTop = document.getElementById('back-to-top');
+    if (backToTop) {
+        backToTop.style.display = scrollY > 500 ? 'flex' : 'none';
+    }
 }
 
+window.addEventListener('scroll', windowScroll, { passive: true });
+
+// Back-to-top click: scroll to top (avoids inline onclick)
 function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    document.body.scrollTo({ top: 0, behavior: 'smooth' });
+    document.documentElement.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-//Feather icon
-feather.replace();
+function attachBackToTop() {
+    var backToTop = document.getElementById('back-to-top');
+    if (backToTop) {
+        backToTop.addEventListener('click', function (e) {
+            e.preventDefault();
+            topFunction();
+        });
+    }
+}
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', attachBackToTop);
+} else {
+    attachBackToTop();
+}
+
+// Feather icons (guard if script not loaded)
+if (typeof feather !== 'undefined') {
+    feather.replace();
+}

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <defs>
+    <filter id="gshadowLooker" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <!-- Page background -->
+  <rect width="400" height="280" rx="10" fill="#f1f5f9"/>
+  <!-- Dashboard header bar -->
+  <rect x="0" y="0" width="400" height="44" rx="10" fill="white" filter="url(#gshadowLooker)"/>
+  <text x="200" y="22" text-anchor="middle" dominant-baseline="middle" fill="#1e293b" font-size="15" font-weight="600" font-family="system-ui, sans-serif">Looker / Looker Studio</text>
+  <!-- Main dashboard card (inset from page) -->
+  <rect x="20" y="56" width="360" height="200" rx="8" fill="white" filter="url(#gshadowLooker)" stroke="#e2e8f0" stroke-width="1"/>
+  <!-- Section title with padding -->
+  <text x="40" y="82" fill="#1e293b" font-size="13" font-weight="600" font-family="system-ui, sans-serif">Real-time insights</text>
+  <!-- Row of tiles: 16px gap, equal width -->
+  <!-- KPI tile -->
+  <rect x="40" y="98" width="164" height="76" rx="6" fill="#fafafa" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="52" y="110" width="140" height="32" rx="6" fill="#4285f4"/>
+  <text x="122" y="128" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="18" font-weight="600" font-family="system-ui, sans-serif">1.2k</text>
+  <text x="122" y="154" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="11" font-family="system-ui, sans-serif">Active users</text>
+  <!-- Trend chart tile: multi-segment line with data points -->
+  <rect x="220" y="98" width="140" height="76" rx="6" fill="#fafafa" stroke="#e2e8f0" stroke-width="1"/>
+  <path d="M 236 150 L 252 145 L 268 138 L 284 132 L 300 124 L 316 120 L 332 117 L 348 115" fill="none" stroke="#4285f4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="236" cy="150" r="2.5" fill="#4285f4"/>
+  <circle cx="268" cy="138" r="2.5" fill="#4285f4"/>
+  <circle cx="300" cy="124" r="2.5" fill="#4285f4"/>
+  <circle cx="332" cy="117" r="2.5" fill="#4285f4"/>
+  <circle cx="348" cy="115" r="2.5" fill="#4285f4"/>
+  <text x="290" y="162" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="11" font-family="system-ui, sans-serif">Trend (7d)</text>
+  <!-- Bottom section: real metrics and status -->
+  <rect x="40" y="188" width="320" height="52" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="52" y="204" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">Sessions</text>
+  <text x="52" y="218" fill="#1e293b" font-size="12" font-weight="600" font-family="system-ui, sans-serif">4,281</text>
+  <text x="130" y="204" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">Avg. duration</text>
+  <text x="130" y="218" fill="#1e293b" font-size="12" font-weight="600" font-family="system-ui, sans-serif">2m 34s</text>
+  <text x="208" y="204" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">Conversions</text>
+  <text x="208" y="218" fill="#1e293b" font-size="12" font-weight="600" font-family="system-ui, sans-serif">312</text>
+  <text x="286" y="204" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">Status</text>
+  <rect x="286" y="212" width="8" height="8" rx="2" fill="#34a853"/>
+  <text x="298" y="219" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">On target</text>
+  <rect x="286" y="226" width="8" height="8" rx="2" fill="#ea4335"/>
+  <text x="298" y="233" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">Alert</text>
+  <!-- Footer caption -->
+  <text x="200" y="268" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">Interactive dashboards • Scalability &amp; performance</text>
+</svg>

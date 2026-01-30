@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <defs>
+    <filter id="dashboard-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="dashboard-blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <!-- Page: 24px margin -->
+  <rect width="400" height="280" rx="10" fill="#f1f5f9"/>
+  <!-- Header: 48px height, 24px padding -->
+  <rect x="0" y="0" width="400" height="48" rx="10" fill="white" filter="url(#dashboard-shadow)"/>
+  <text x="24" y="32" fill="#1e293b" font-size="14" font-weight="600" font-family="system-ui, sans-serif">Poll Management</text>
+  <rect x="296" y="12" width="80" height="24" rx="6" fill="#2563eb"/>
+  <text x="336" y="24" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="11" font-weight="500" font-family="system-ui, sans-serif">+ New Poll</text>
+  <!-- Sidebar: 96px width, 24px padding, 232px height -->
+  <rect x="0" y="48" width="96" height="232" fill="#f8fafc"/>
+  <text x="24" y="72" fill="#1e293b" font-size="11" font-weight="600" font-family="system-ui, sans-serif">Dashboard</text>
+  <text x="24" y="96" fill="#64748b" font-size="11" font-family="system-ui, sans-serif">Polls</text>
+  <text x="24" y="120" fill="#64748b" font-size="11" font-family="system-ui, sans-serif">Results</text>
+  <text x="24" y="144" fill="#64748b" font-size="11" font-family="system-ui, sans-serif">Settings</text>
+  <!-- Main: 12px gap from sidebar, 16px padding inside cards -->
+  <rect x="108" y="60" width="276" height="104" rx="8" fill="white" filter="url(#dashboard-shadow)"/>
+  <text x="124" y="84" fill="#1e293b" font-size="12" font-weight="600" font-family="system-ui, sans-serif">Overview</text>
+  <!-- Stat cards: 16px from card left, 76px wide, 8px gap (fits 276px) -->
+  <rect x="124" y="96" width="76" height="56" rx="6" fill="url(#dashboard-blueGrad)"/>
+  <text x="162" y="118" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="18" font-weight="700" font-family="system-ui, sans-serif">128</text>
+  <text x="162" y="138" text-anchor="middle" dominant-baseline="middle" fill="rgba(255,255,255,0.9)" font-size="9" font-family="system-ui, sans-serif">Total Polls</text>
+  <rect x="208" y="96" width="76" height="56" rx="6" fill="#f1f5f9"/>
+  <text x="246" y="118" text-anchor="middle" dominant-baseline="middle" fill="#1e293b" font-size="18" font-weight="700" font-family="system-ui, sans-serif">3.2k</text>
+  <text x="246" y="138" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">Total Votes</text>
+  <rect x="292" y="96" width="76" height="56" rx="6" fill="#f1f5f9"/>
+  <text x="330" y="118" text-anchor="middle" dominant-baseline="middle" fill="#1e293b" font-size="18" font-weight="700" font-family="system-ui, sans-serif">67%</text>
+  <text x="330" y="138" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">Participation</text>
+  <!-- Active Polls: list only, no status pills -->
+  <rect x="108" y="176" width="128" height="92" rx="8" fill="white" filter="url(#dashboard-shadow)"/>
+  <text x="124" y="196" fill="#1e293b" font-size="11" font-weight="600" font-family="system-ui, sans-serif">Active Polls</text>
+  <text x="124" y="210" dominant-baseline="middle" fill="#1e293b" font-size="9" font-family="system-ui, sans-serif">Team feedback Q1</text>
+  <text x="124" y="222" dominant-baseline="middle" fill="#1e293b" font-size="9" font-family="system-ui, sans-serif">Feature priority</text>
+  <text x="124" y="234" dominant-baseline="middle" fill="#1e293b" font-size="9" font-family="system-ui, sans-serif">Roadmap 2024</text>
+  <text x="124" y="252" fill="#64748b" font-size="8" font-family="system-ui, sans-serif">View all →</text>
+  <!-- Results: bar chart — 5 bars, 8px wide, 4px gap, labels below bars -->
+  <rect x="248" y="176" width="136" height="92" rx="8" fill="white" filter="url(#dashboard-shadow)"/>
+  <text x="264" y="198" fill="#1e293b" font-size="12" font-weight="600" font-family="system-ui, sans-serif">Results</text>
+  <rect x="264" y="208" width="8" height="44" rx="2" fill="#2563eb"/>
+  <rect x="276" y="216" width="8" height="36" rx="2" fill="#3b82f6" opacity="0.9"/>
+  <rect x="288" y="212" width="8" height="40" rx="2" fill="#60a5fa" opacity="0.85"/>
+  <rect x="300" y="220" width="8" height="32" rx="2" fill="#93c5fd" opacity="0.8"/>
+  <rect x="312" y="224" width="8" height="28" rx="2" fill="#bfdbfe" opacity="0.75"/>
+  <text x="268" y="264" text-anchor="middle" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">A</text>
+  <text x="280" y="264" text-anchor="middle" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">B</text>
+  <text x="292" y="264" text-anchor="middle" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">C</text>
+  <text x="304" y="264" text-anchor="middle" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">D</text>
+  <text x="316" y="264" text-anchor="middle" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">E</text>
+</svg>

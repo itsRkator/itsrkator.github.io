@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <defs>
+    <filter id="vca-dashboard-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="vca-trend-fill" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Page: 24px margin -->
+  <rect width="400" height="280" rx="10" fill="#f8fafc"/>
+  <!-- Header: 48px height, 24px padding -->
+  <rect x="0" y="0" width="400" height="48" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1" filter="url(#vca-dashboard-shadow)"/>
+  <text x="24" y="32" fill="#1e293b" font-size="12" font-weight="600" font-family="system-ui, sans-serif">Crash analytics · Google Cloud</text>
+  <!-- Stat cards: 24px margin, 16px gap; 16px padding inside -->
+  <rect x="24" y="56" width="168" height="88" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1" filter="url(#vca-dashboard-shadow)"/>
+  <text x="40" y="78" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">Total crashes (30d)</text>
+  <text x="108" y="122" text-anchor="middle" dominant-baseline="middle" fill="#1e293b" font-size="22" font-weight="700" font-family="system-ui, sans-serif">248</text>
+  <rect x="208" y="56" width="168" height="88" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1" filter="url(#vca-dashboard-shadow)"/>
+  <text x="224" y="78" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">By severity</text>
+  <!-- Tabular legend: color | label | count (3 rows, 16px each) -->
+  <rect x="224" y="88" width="136" height="48" rx="4" fill="#f8fafc"/>
+  <rect x="232" y="92" width="12" height="12" rx="2" fill="#ef4444"/>
+  <text x="248" y="99" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">High</text>
+  <text x="352" y="99" text-anchor="end" dominant-baseline="middle" fill="#1e293b" font-size="9" font-weight="500" font-family="system-ui, sans-serif">42</text>
+  <rect x="232" y="108" width="12" height="12" rx="2" fill="#eab308"/>
+  <text x="248" y="115" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">Med</text>
+  <text x="352" y="115" text-anchor="end" dominant-baseline="middle" fill="#1e293b" font-size="9" font-weight="500" font-family="system-ui, sans-serif">156</text>
+  <rect x="232" y="124" width="12" height="12" rx="2" fill="#22c55e"/>
+  <text x="248" y="131" dominant-baseline="middle" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">Low</text>
+  <text x="352" y="131" text-anchor="end" dominant-baseline="middle" fill="#1e293b" font-size="9" font-weight="500" font-family="system-ui, sans-serif">50</text>
+  <!-- Trend card: 8px gap below stat cards; content 40–360 -->
+  <rect x="24" y="152" width="352" height="116" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1" filter="url(#vca-dashboard-shadow)"/>
+  <text x="40" y="176" fill="#1e293b" font-size="12" font-weight="600" font-family="system-ui, sans-serif">Trend (last 7 days)</text>
+  <!-- Chart area: 40–360 x 188–248; Y scale ~190–250 crashes -->
+  <path d="M52 206 L96 218 L140 222 L184 216 L228 228 L272 236 L316 240 L316 248 L52 248 Z" fill="url(#vca-trend-fill)"/>
+  <polyline points="52,206 96,218 140,222 184,216 228,228 272,236 316,240" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Y-axis label -->
+  <text x="40" y="202" fill="#94a3b8" font-size="8" font-family="system-ui, sans-serif">Crashes</text>
+  <!-- X-axis: 7 day labels centered under points (52,96,140,184,228,272,316) -->
+  <text x="52" y="258" text-anchor="middle" fill="#94a3b8" font-size="8" font-family="system-ui, sans-serif">Mon</text>
+  <text x="96" y="258" text-anchor="middle" fill="#94a3b8" font-size="8" font-family="system-ui, sans-serif">Tue</text>
+  <text x="140" y="258" text-anchor="middle" fill="#94a3b8" font-size="8" font-family="system-ui, sans-serif">Wed</text>
+  <text x="184" y="258" text-anchor="middle" fill="#94a3b8" font-size="8" font-family="system-ui, sans-serif">Thu</text>
+  <text x="228" y="258" text-anchor="middle" fill="#94a3b8" font-size="8" font-family="system-ui, sans-serif">Fri</text>
+  <text x="272" y="258" text-anchor="middle" fill="#94a3b8" font-size="8" font-family="system-ui, sans-serif">Sat</text>
+  <text x="316" y="258" text-anchor="middle" fill="#94a3b8" font-size="8" font-family="system-ui, sans-serif">Sun</text>
+</svg>

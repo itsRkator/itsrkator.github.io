@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <defs>
+    <filter id="typing-presence-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <!-- Page: 24px margin -->
+  <rect width="400" height="280" rx="10" fill="#f8fafc"/>
+  <!-- Card: 24px margin, 248px height so input + send fit with bottom padding -->
+  <rect x="24" y="24" width="352" height="248" rx="8" fill="white" filter="url(#typing-presence-shadow)"/>
+  <!-- Title + presence badge row -->
+  <text x="40" y="48" fill="#1e293b" font-size="13" font-weight="600" font-family="system-ui, sans-serif">Real-time · Typing &amp; presence</text>
+  <rect x="276" y="28" width="88" height="32" rx="8" fill="#f0fdf4"/>
+  <circle cx="298" cy="44" r="5" fill="#22c55e"/>
+  <text x="312" y="44" dominant-baseline="middle" fill="#15803d" font-size="10" font-weight="500" font-family="system-ui, sans-serif">3 online</text>
+  <!-- Messages: 16px padding from card -->
+  <rect x="40" y="68" width="200" height="40" rx="8" fill="#e2e8f0"/>
+  <text x="56" y="84" fill="#1e293b" font-size="11" font-weight="600" font-family="system-ui, sans-serif">Alex</text>
+  <text x="56" y="98" fill="#475569" font-size="11" font-family="system-ui, sans-serif">Sure, I'll share the doc.</text>
+  <rect x="152" y="120" width="200" height="40" rx="8" fill="#2563eb"/>
+  <text x="168" y="136" fill="white" font-size="11" font-weight="600" font-family="system-ui, sans-serif">You</text>
+  <text x="168" y="150" fill="rgba(255,255,255,0.95)" font-size="11" font-family="system-ui, sans-serif">Thanks!</text>
+  <!-- Typing indicator -->
+  <rect x="40" y="172" width="168" height="32" rx="8" fill="#f1f5f9"/>
+  <circle cx="56" cy="188" r="4" fill="#94a3b8"/>
+  <circle cx="72" cy="188" r="4" fill="#94a3b8"/>
+  <circle cx="88" cy="188" r="4" fill="#94a3b8"/>
+  <text x="104" y="188" dominant-baseline="middle" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">Alex is typing...</text>
+  <!-- Input field + send button: near bottom, 16px from card bottom (272) -->
+  <rect x="40" y="224" width="276" height="32" rx="8" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="56" y="240" dominant-baseline="middle" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif">Type a message...</text>
+  <rect x="324" y="226" width="28" height="28" rx="6" fill="#2563eb"/>
+  <path d="M334 240 L342 240 L338 236 M338 244 L342 240" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

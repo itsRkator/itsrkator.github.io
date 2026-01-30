@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" fill="none" role="img" aria-labelledby="ai-extraction-title ai-extraction-desc" overflow="hidden">
+  <title id="ai-extraction-title">AI extraction · Vertex AI</title>
+  <desc id="ai-extraction-desc">Flow: Invoice document (input) → Vertex AI extraction (process) → Structured data with vendor, date, line items (output).</desc>
+  <defs>
+    <filter id="aiExtractionShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrowAI" markerWidth="5" markerHeight="4" refX="4" refY="2" orient="auto">
+      <polygon points="0 0, 5 2, 0 4" fill="#8b5cf6"/>
+    </marker>
+    <!-- Document icon (input) -->
+    <symbol id="iconDoc" viewBox="0 0 20 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/>
+      <path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" d="M14 2v6h6M7 13h6M7 17h4"/>
+    </symbol>
+    <!-- Table / structured data icon (output) -->
+    <symbol id="iconTable" viewBox="0 0 20 20">
+      <path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M3 5h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/>
+      <path fill="none" stroke="currentColor" stroke-width="1.2" d="M3 9h14M7 5v10M13 5v10"/>
+    </symbol>
+  </defs>
+  <!-- Background & header -->
+  <rect width="480" height="280" rx="10" fill="#f8fafc"/>
+  <rect x="0" y="0" width="480" height="44" rx="10" fill="white" filter="url(#aiExtractionShadow)"/>
+  <text x="24" y="22" dominant-baseline="middle" fill="#0f172a" font-size="12" font-weight="600" font-family="Inter, system-ui, -apple-system, sans-serif" letter-spacing="0.02em">AI extraction · Vertex AI</text>
+
+  <!-- Input card: 40–160 -->
+  <rect x="40" y="56" width="120" height="128" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1" filter="url(#aiExtractionShadow)"/>
+  <rect x="56" y="72" width="88" height="88" rx="4" fill="#f1f5f9"/>
+  <use href="#iconDoc" x="84" y="76" width="24" height="28" fill="none" stroke="#94a3b8"/>
+  <rect x="64" y="110" width="64" height="8" rx="2" fill="#e2e8f0"/>
+  <rect x="64" y="122" width="64" height="8" rx="2" fill="#e2e8f0"/>
+  <rect x="64" y="134" width="44" height="8" rx="2" fill="#e2e8f0"/>
+  <rect x="64" y="146" width="64" height="8" rx="2" fill="#e2e8f0"/>
+  <text x="100" y="168" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="10" font-weight="600" font-family="Inter, system-ui, sans-serif">Invoice</text>
+
+  <!-- Data flow: Arrow 1  Invoice → Vertex AI -->
+  <path d="M160 120 L 200 120" stroke="#8b5cf6" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrowAI)"/>
+  <!-- Process pill (group for reliable text centering) -->
+  <g transform="translate(200, 108)">
+    <rect x="0" y="0" width="52" height="24" rx="4" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1"/>
+    <text x="26" y="12" text-anchor="middle" dominant-baseline="middle" fill="#5b21b6" font-size="9" font-weight="600" font-family="Inter, system-ui, sans-serif">Vertex AI</text>
+  </g>
+  <!-- Data flow: Arrow 2  Vertex AI → Structured data -->
+  <path d="M252 120 L 292 120" stroke="#8b5cf6" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrowAI)"/>
+
+  <!-- Output card: 292–412 -->
+  <rect x="292" y="56" width="120" height="128" rx="8" fill="white" stroke="#8b5cf6" stroke-width="2" filter="url(#aiExtractionShadow)"/>
+  <rect x="308" y="72" width="88" height="20" rx="4" fill="#ede9fe"/>
+  <text x="352" y="83" text-anchor="middle" dominant-baseline="middle" fill="#5b21b6" font-size="10" font-weight="600" font-family="Inter, system-ui, sans-serif">Structured data</text>
+  <use href="#iconTable" x="342" y="98" width="20" height="20" fill="none" stroke="#8b5cf6"/>
+  <rect x="308" y="122" width="88" height="10" rx="2" fill="#e2e8f0"/>
+  <rect x="308" y="136" width="88" height="10" rx="2" fill="#e2e8f0"/>
+  <rect x="308" y="150" width="88" height="10" rx="2" fill="#e2e8f0"/>
+  <rect x="308" y="164" width="88" height="10" rx="2" fill="#e2e8f0"/>
+  <text x="352" y="179" text-anchor="middle" dominant-baseline="middle" fill="#64748b" font-size="8" font-family="Inter, system-ui, sans-serif">Vendor, date, line items</text>
+</svg>

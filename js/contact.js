@@ -12,38 +12,32 @@ function validateForm() {
     message: userMessage
   };
 
-  document.getElementById("error-msg").style.opacity = 0;
-  document.getElementById('error-msg').innerHTML = "";
-  if (userName == "" || userName == null) {
-    document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>Please enter a Name</div>";
+  var errorEl = document.getElementById('error-msg');
+  if (!errorEl) return false;
+  errorEl.style.opacity = 0;
+  errorEl.innerHTML = '';
+  if (userName == '' || userName == null) {
+    errorEl.innerHTML = "<div class='alert alert-danger error_message'>Please enter a name.</div>";
     fadeIn();
-    setTimeout(() => {
-      document.getElementById('error-msg').innerHTML = "";
-    }, 5000)
+    setTimeout(function () { errorEl.innerHTML = ''; }, 5000);
     return false;
   }
-  if (userEmail == "" || userEmail == null) {
-    document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>Please enter a Email</div>";
+  if (userEmail == '' || userEmail == null) {
+    errorEl.innerHTML = "<div class='alert alert-danger error_message'>Please enter an email.</div>";
     fadeIn();
-    setTimeout(() => {
-      document.getElementById('error-msg').innerHTML = "";
-    }, 5000)
+    setTimeout(function () { errorEl.innerHTML = ''; }, 5000);
     return false;
   }
-  if (userSubject == "" || userSubject == null) {
-    document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>Please enter a Subject</div>";
+  if (userSubject == '' || userSubject == null) {
+    errorEl.innerHTML = "<div class='alert alert-danger error_message'>Please enter a subject.</div>";
     fadeIn();
-    setTimeout(() => {
-      document.getElementById('error-msg').innerHTML = "";
-    }, 5000)
+    setTimeout(function () { errorEl.innerHTML = ''; }, 5000);
     return false;
   }
-  if (userMessage == "" || userMessage == null) {
-    document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>Please enter a Comments</div>";
+  if (userMessage == '' || userMessage == null) {
+    errorEl.innerHTML = "<div class='alert alert-danger error_message'>Please enter a message.</div>";
     fadeIn();
-    setTimeout(() => {
-      document.getElementById('error-msg').innerHTML = "";
-    }, 5000)
+    setTimeout(function () { errorEl.innerHTML = ''; }, 5000);
     return false;
   }
 
@@ -51,36 +45,36 @@ function validateForm() {
   xhttpReq.open('POST', 'https://itsrkator-fa8t.onrender.com/');
   xhttpReq.setRequestHeader('content-type', 'application/json');
   xhttpReq.onload = function () {
-    console.log("Form Data: ", formData, "\nResponse Text: ", xhttpReq.responseText);
+    var errEl = document.getElementById('error-msg');
+    if (!errEl) return;
     if (xhttpReq.responseText == 'Success') {
-      document.getElementById('error-msg').innerHTML = "<div class='alert alert-success'>Email sent successfully.</div>";
+      errEl.innerHTML = "<div class='alert alert-success'>Email sent successfully.</div>";
       fadeIn();
-      setTimeout(() => {
-        document.getElementById('error-msg').innerHTML = "";
-      }, 10000);
-      document.forms['contact-form']['name'].value = '';
-      document.forms["contact-form"]["email"].value = '';
-      document.forms["contact-form"]["subject"].value = '';
-      document.forms["contact-form"]["message"].value = '';
+      setTimeout(function () { errEl.innerHTML = ''; }, 10000);
+      if (document.forms['contact-form']) {
+        document.forms['contact-form']['name'].value = '';
+        document.forms['contact-form']['email'].value = '';
+        document.forms['contact-form']['subject'].value = '';
+        document.forms['contact-form']['message'].value = '';
+      }
     } else {
-      document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>Something went wrong with the server. Please try after some time.</div>";
+      errEl.innerHTML = "<div class='alert alert-danger error_message'>Something went wrong with the server. Please try again later.</div>";
       fadeIn();
-      setTimeout(() => {
-        document.getElementById('error-msg').innerHTML = "";
-      }, 10000);
+      setTimeout(function () { errEl.innerHTML = ''; }, 10000);
     }
-  }
+  };
   xhttpReq.send(JSON.stringify(formData));
   return false;
 }
 
 
 function fadeIn() {
-  let fade = document.getElementById("error-msg");
-  let opacity = 0;
-  let intervalID = setInterval(function () {
+  var fade = document.getElementById('error-msg');
+  if (!fade) return;
+  var opacity = 0;
+  var intervalID = setInterval(function () {
     if (opacity < 1) {
-      opacity = opacity + 0.5
+      opacity += 0.5;
       fade.style.opacity = opacity;
     } else {
       clearInterval(intervalID);

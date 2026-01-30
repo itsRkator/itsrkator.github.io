@@ -1,426 +1,599 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <title>Rohitash - Personal Profile</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
-    <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
-    <meta content="Zoyothemes" name="author" />
+    <title>Rohitash Kator | Article</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rohitash Kator — Senior Full-Stack Software Engineer. Article details with notes on backend systems and product engineering."
+    />
+    <meta
+      name="keywords"
+      content="Rohitash Kator, article, backend, Node.js, Express, RBAC, microservices, NestJS, TypeScript"
+    />
+    <meta content="Rohitash Kator" name="author" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+    />
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- Icons -->
-    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="css/materialdesignicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!-- Main css File -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
-    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
-</head>
+    <link
+      href="css/style.css?v=20260128"
+      rel="stylesheet"
+      type="text/css"
+      id="theme-opt"
+    />
+    <link
+      href="css/colors/default.css?v=20260128"
+      rel="stylesheet"
+      id="color-opt"
+    />
+    <link
+      href="css/rk-modern.css?v=20260128-15"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
 
-<body data-bs-spy="scroll" data-bs-offset="20" data-bs-target="#navbar-navlist">
+  <body
+    data-bs-spy="scroll"
+    data-bs-offset="20"
+    data-bs-target="#navbar-navlist"
+    class="rk-page rk-blog-detail"
+  >
     <!-- Loader -->
-    <div id="preloader">
-        <div id="status">
-            <div class="spinner">
-                <div class="double-bounce1"></div>
-                <div class="double-bounce2"></div>
-            </div>
+    <div id="preloader" aria-hidden="true" role="status" aria-live="polite">
+      <div id="status">
+        <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
         </div>
+      </div>
     </div>
     <!-- Loader -->
 
     <!-- Navbar Start -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
-        <div class="container">
-            <!-- Logo container-->
-            <a class="logo navbar-brand text-dark" style="color: #343a40 !important;" href="./index.html">Rohitash Kator</a>
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky rk-topbar"
+    >
+      <div class="container rk-topbar-inner">
+        <a
+          class="navbar-brand rk-brand"
+          href="index.html#home"
+          aria-label="Home"
+        >
+          <span>Rohitash</span>
+          <span>Kator</span>
+        </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="mdi mdi-menu"></i>
-            </button><!-- End Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="mdi mdi-menu"></i>
+        </button>
 
-            <div class="collapse navbar-collapse navigation" id="navbarCollapse">
-                <ul id="navbar-navlist" class="navbar-nav ms-auto">
-                    <li id="navbar-navlist" class="nav-item">
-                        <a class="nav-link" href="./index.html#home">Home</a>
-                    </li>
-                    <!--end nav item-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html#resume">Resume</a>
-                    </li>
-                    <!--end nav item-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html#interest-hobbies">Interest & Hobbies</a>
-                    </li>
-                    <!--end nav item-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html#projects">Projects</a>
-                    </li>
-                    <!--end nav item-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html#skills">Skills</a>
-                    </li>
-                    <!--end nav item-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html#contact">Contact</a>
-                    </li>
-                    <!--end nav item-->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages
-                        </a>
-                        <div class="dropdown-menu rounded m-0" aria-labelledby="navbarDropdown">
-                            <div class="container ml-0 ml-md-0">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <!-- <a class="dropdown-item" href="page-blog.html">Blog</a> -->
-                                        <!-- <a class="dropdown-item" href="page-blog-detail.html">Blog Detail</a> -->
-                                        <a class="dropdown-item" href="page-portfolio.html">Portfolio</a>
-                                        <a class="dropdown-item" href="page-portfolio-detail.html">Portfolio Detail</a>
-                                    </div>
-                                    <!--end col-->
-                                </div>
-                                <!--end row-->
-                            </div>
-                            <!--end container-->
-                        </div>
-                    </li>
-                    <!--end nav item-->
-                </ul>
+        <div class="collapse navbar-collapse navigation" id="navbarCollapse">
+          <ul id="navbar-navlist" class="navbar-nav rk-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page-portfolio.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="page-blog.html">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
+          </ul>
 
-                <ul class="top-right text-right list-unstyled list-inline mb-0 mt-2 mt-sm-0 nav-social">
-                    <li class="list-inline-item me-2"><a href="javascript:void(0)"><i class="mdi mdi-facebook"></i></a>
-                    </li>
-                    <li class="list-inline-item me-2"><a href="javascript:void(0)"><i class="mdi mdi-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-instagram"></i></a></li>
-                </ul>
-
+          <div class="rk-topbar-right">
+            <div class="rk-topbar-socials" aria-label="Social profiles">
+              <a
+                class="rk-social-icon"
+                href="https://github.com/itsrkator"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+              >
+                <img
+                  src="images/skills/github/github-original.svg"
+                  alt="GitHub"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                class="rk-social-icon"
+                href="https://www.linkedin.com/in/itsrkator"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+              >
+                <img
+                  src="images/skills/linkedin/linkedin-plain.svg"
+                  alt="LinkedIn"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                class="rk-social-icon"
+                href="https://www.facebook.com/itsrkator"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Facebook"
+              >
+                <img
+                  src="images/skills/facebook/facebook-plain.svg"
+                  alt="Facebook"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                class="rk-social-icon"
+                href="https://www.instagram.com/itsrkator/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+              >
+                <img
+                  src="images/skills/instagram/instagram-plain.svg"
+                  alt="Instagram"
+                  loading="lazy"
+                />
+              </a>
             </div>
+          </div>
         </div>
-        <!--end container-->
+      </div>
     </nav>
-    <!--end navbar-->
     <!-- Navbar End -->
 
-    <!-- Hero Start -->
-    <section class="bg-half d-table w-100" style="background: url('images/bg-posted.jpg')center center;">
-        <div class="bg-overlay bg-overlay-white"></div>
+    <main class="rk-page-shell" id="top">
+      <section class="rk-page-head">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 text-center">
-                    <div class="page-next-level">
-                        <h4 class="title text-black"> Latest News or Blog </h4>
-                        <div class="page-next mt">
-                            <nav aria-label="breadcrumb" class="d-inline-block">
-                                <ul class="breadcrumb rounded mb-0 mt-3">
-                                    <li class="breadcrumb-item"><a href="index.html">Rohitash Kator</a></li>
-                                    <li class="breadcrumb-item"><a href="javascript:void(0)">Page</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">BLOG DETAIL</li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-                <!--end col-->
-            </div>
-            <!--end row-->
+          <div class="rk-page-head-row">
+            <h1 class="rk-page-title">Article</h1>
+            <a class="rk-pill rk-pill-action" href="page-blog.html"
+              ><span>Back to Articles</span
+              ><span class="rk-arrow" aria-hidden="true">←</span></a
+            >
+          </div>
+          <p class="rk-page-sub">
+            A deep dive into a topic — readable, minimal, and distraction-free.
+          </p>
         </div>
-        <!--end container-->
-    </section>
-    <!--end section-->
-    <!-- Hero End -->
+      </section>
 
-    <!-- Blog STart -->
-    <section class="section">
+      <!-- Blog Start -->
+      <section class="section">
         <div class="container">
-            <div class="row">
-                <!-- BLog Start -->
-                <div class="col-lg-8 col-md-6">
-                    <div class="card blog blog-detail border-0 shadow rounded">
-                        <img src="images/blog/01.jpg" class="img-fluid rounded-top" alt="">
-                        <div class="card-body content">
-                            <h6><i class="mdi mdi-tag text-primary me-1"></i><a href="javscript:void(0)"
-                                    class="text-primary">Software</a>, <a href="javscript:void(0)"
-                                    class="text-primary">Application</a></h6>
-                            <p class="text-muted mt-3">The most well-known dummy text is the 'Lorem Ipsum', which is
-                                said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin
-                                language which more or less corresponds to 'proper' Latin. It contains a series of real
-                                Latin words. This ancient dummy text is also incomprehensible, but it imitates the
-                                rhythm of most European languages in Latin script. </p>
-                            <blockquote class="blockquote mt-3 p-3">
-                                <p class="text-muted mb-0 font-italic">" There are many variations of passages of Lorem
-                                    Ipsum available, but the majority have suffered alteration in some form, by injected
-                                    humour, or randomised words which don't look even slightly believable. "</p>
-                            </blockquote>
-                            <p class="text-muted">The advantage of its Latin origin and the relative meaninglessness of
-                                Lorum Ipsum is that the text does not attract attention to itself or distract the
-                                viewer's attention from the layout.</p>
-                            <div class="post-meta mt-3">
-                                <ul class="list-unstyled mb-0">
-                                    <li class="list-inline-item me-2"><a href="javascript:void(0)"
-                                            class="text-muted like"><i class="mdi mdi-heart-outline me-1"></i>33</a>
-                                    </li>
-                                    <li class="list-inline-item"><a href="javascript:void(0)"
-                                            class="text-muted comments"><i
-                                                class="mdi mdi-comment-outline me-1"></i>08</a></li>
-                                </ul>
+          <div class="row">
+            <!-- BLog Start -->
+            <div class="col-lg-8 col-md-6">
+              <div class="card blog blog-detail border-0 shadow rounded">
+                <img
+                  id="rk-article-img"
+                  src="images/poll-management-system/rbac.svg"
+                  class="img-fluid rounded-top"
+                  alt=""
+                />
+                <div class="card-body content">
+                  <h6>
+                    <i class="mdi mdi-tag text-primary me-1"></i>
+                    <a href="page-blog.html#backend" class="text-primary"
+                      >Backend</a
+                    >,
+                    <a href="page-blog.html#security" class="text-primary"
+                      >Security</a
+                    >
+                  </h6>
+                  <h2 class="h5 mt-2 mb-3" id="rk-article-title">
+                    RBAC + poll workflows with Node.js &amp; Express
+                  </h2>
+                  <p class="text-muted mt-3" id="rk-article-excerpt">
+                    In the Poll Management System (Internal / POC), the goal was
+                    simple: ship secure and scalable APIs for poll lifecycles
+                    (create, publish, vote, close) while keeping authorization
+                    predictable and auditable.
+                  </p>
+                  <ul class="text-muted ps-3 mb-0">
+                    <li>
+                      Model roles and permissions explicitly (RBAC) and keep
+                      checks close to the route/controller layer.
+                    </li>
+                    <li>
+                      Design idempotent vote endpoints and validate poll state
+                      transitions server-side.
+                    </li>
+                    <li>
+                      Add observability early: structured logs and simple
+                      metrics around key workflows.
+                    </li>
+                    <li>
+                      Keep the codebase modular so new question types and
+                      reports can be added safely.
+                    </li>
+                  </ul>
+                  <blockquote class="blockquote mt-3 p-3">
+                    <p class="text-muted mb-0 font-italic">
+                      "Security is not a feature — it’s a default: clear roles,
+                      clear rules, and consistent enforcement."
+                    </p>
+                  </blockquote>
+                  <p class="text-muted">
+                    This approach helped keep the platform maintainable while
+                    supporting analytics and reporting features without breaking
+                    access guarantees.
+                  </p>
+                  <div class="post-meta mt-3">
+                    <ul class="list-unstyled mb-0">
+                      <li class="list-inline-item me-2">
+                        <a href="#content" class="text-muted like"
+                          ><i class="mdi mdi-heart-outline me-1"></i>33</a
+                        >
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#comments" class="text-muted comments"
+                          ><i class="mdi mdi-comment-outline me-1"></i>08</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Comment section hidden for now -->
+              <div class="d-none" id="blog-comment-section">
+              <div class="card shadow rounded border-0 mt-4" id="comments">
+                <div class="card-body">
+                  <h5 class="card-title mb-0">Comments</h5>
+
+                  <ul class="media-list list-unstyled mb-0">
+                    <li class="mt-4">
+                      <div class="d-flex justify-content-between">
+                        <div class="media align-items-center">
+                          <a class="pr-3" href="#comments">
+                            <img
+                              src="images/client/male-1.jpg"
+                              class="img-fluid avatar avatar-md-sm rounded-circle shadow img-thumbnail"
+                              alt="img"
+                            />
+                          </a>
+                          <div class="commentor-detail">
+                            <h6 class="mb-0">
+                              <a
+                                href="#comments"
+                                class="text-dark media-heading"
+                                >Lorenzo Peterson</a
+                              >
+                            </h6>
+                            <small class="text-muted"
+                              >15th August, 2019 at 01:25 pm</small
+                            >
+                          </div>
+                        </div>
+                        <a href="#leave-comment" class="text-muted"
+                          ><i class="mdi mdi-reply"></i> Reply</a
+                        >
+                      </div>
+                      <div class="mt-3">
+                        <p class="text-muted font-italic p-3 bg-light rounded">
+                          "Great breakdown—especially enforcing poll state
+                          transitions server-side."
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="mt-4">
+                      <div class="d-flex justify-content-between">
+                        <div class="media align-items-center">
+                          <a class="pr-3" href="#comments">
+                            <img
+                              src="images/client/female-3.jpg"
+                              class="img-fluid avatar avatar-md-sm rounded-circle shadow img-thumbnail"
+                              alt="img"
+                            />
+                          </a>
+                          <div class="commentor-detail">
+                            <h6 class="mb-0">
+                              <a
+                                href="#comments"
+                                class="media-heading text-dark"
+                                >Tammy Camacho</a
+                              >
+                            </h6>
+                            <small class="text-muted"
+                              >15th August, 2019 at 05:44 pm</small
+                            >
+                          </div>
+                        </div>
+                        <a href="#leave-comment" class="text-muted"
+                          ><i class="mdi mdi-reply"></i> Reply</a
+                        >
+                      </div>
+                      <div class="mt-3">
+                        <p class="text-muted font-italic p-3 bg-light rounded">
+                          "Would love a follow-up on testing strategies for RBAC
+                          (unit + integration) in Express."
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="mt-4">
+                      <div class="d-flex justify-content-between">
+                        <div class="media align-items-center">
+                          <a class="pr-3" href="#comments">
+                            <img
+                              src="images/client/female-4.jpg"
+                              class="img-fluid avatar avatar-md-sm rounded-circle shadow img-thumbnail"
+                              alt="img"
+                            />
+                          </a>
+                          <div class="commentor-detail">
+                            <h6 class="mb-0">
+                              <a
+                                href="#comments"
+                                class="media-heading text-dark"
+                                >Tammy Camacho</a
+                              >
+                            </h6>
+                            <small class="text-muted"
+                              >16th August, 2019 at 03:44 pm</small
+                            >
+                          </div>
+                        </div>
+                        <a href="#leave-comment" class="text-muted"
+                          ><i class="mdi mdi-reply"></i> Reply</a
+                        >
+                      </div>
+                      <div class="mt-3">
+                        <p class="text-muted font-italic p-3 bg-light rounded">
+                          "Nice callout on observability—workflow metrics help
+                          catch issues early."
+                        </p>
+                      </div>
+
+                      <ul class="list-unstyled ps-4 ps-md-5 sub-comment">
+                        <li class="mt-4">
+                          <div class="d-flex justify-content-between">
+                            <div class="media align-items-center">
+                              <a class="pr-3" href="#comments">
+                                <img
+                                  src="images/client/male-1.jpg"
+                                  class="img-fluid avatar avatar-md-sm rounded-circle shadow img-thumbnail"
+                                  alt="img"
+                                />
+                              </a>
+                              <div class="commentor-detail">
+                                <h6 class="mb-0">
+                                  <a
+                                    href="#comments"
+                                    class="text-dark media-heading"
+                                    >Lorenzo Peterson</a
+                                  >
+                                </h6>
+                                <small class="text-muted"
+                                  >17th August, 2019 at 01:25 pm</small
+                                >
+                              </div>
                             </div>
-                        </div>
-                    </div>
-
-
-                    <div class="card shadow rounded border-0 mt-4">
-                        <div class="card-body">
-                            <h5 class="card-title mb-0">Comments :</h5>
-
-                            <ul class="media-list list-unstyled mb-0">
-                                <li class="mt-4">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="media align-items-center">
-                                            <a class="pr-3" href="#">
-                                                <img src="images/client/01.jpg"
-                                                    class="img-fluid avatar avatar-md-sm rounded-circle shadow img-thumbnail"
-                                                    alt="img">
-                                            </a>
-                                            <div class="commentor-detail">
-                                                <h6 class="mb-0"><a href="javascript:void(0)"
-                                                        class="text-dark media-heading">Lorenzo Peterson</a></h6>
-                                                <small class="text-muted">15th August, 2019 at 01:25 pm</small>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="text-muted"><i class="mdi mdi-reply"></i> Reply</a>
-                                    </div>
-                                    <div class="mt-3">
-                                        <p class="text-muted font-italic p-3 bg-light rounded">" There are many
-                                            variations of passages of Lorem Ipsum available, but the majority have
-                                            suffered alteration in some form, by injected humour "</p>
-                                    </div>
-                                </li>
-
-                                <li class="mt-4">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="media align-items-center">
-                                            <a class="pr-3" href="#">
-                                                <img src="images/client/02.jpg"
-                                                    class="img-fluid avatar avatar-md-sm rounded-circle shadow img-thumbnail"
-                                                    alt="img">
-                                            </a>
-                                            <div class="commentor-detail">
-                                                <h6 class="mb-0"><a href="javascript:void(0)"
-                                                        class="media-heading text-dark">Tammy Camacho</a></h6>
-                                                <small class="text-muted">15th August, 2019 at 05:44 pm</small>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="text-muted"><i class="mdi mdi-reply"></i> Reply</a>
-                                    </div>
-                                    <div class="mt-3">
-                                        <p class="text-muted font-italic p-3 bg-light rounded">" There are many
-                                            variations of passages of Lorem Ipsum available, but the majority have
-                                            suffered alteration in some form, by injected humour "</p>
-                                    </div>
-                                </li>
-
-                                <li class="mt-4">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="media align-items-center">
-                                            <a class="pr-3" href="#">
-                                                <img src="images/client/03.jpg"
-                                                    class="img-fluid avatar avatar-md-sm rounded-circle shadow img-thumbnail"
-                                                    alt="img">
-                                            </a>
-                                            <div class="commentor-detail">
-                                                <h6 class="mb-0"><a href="javascript:void(0)"
-                                                        class="media-heading text-dark">Tammy Camacho</a></h6>
-                                                <small class="text-muted">16th August, 2019 at 03:44 pm</small>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="text-muted"><i class="mdi mdi-reply"></i> Reply</a>
-                                    </div>
-                                    <div class="mt-3">
-                                        <p class="text-muted font-italic p-3 bg-light rounded">" There are many
-                                            variations of passages of Lorem Ipsum available, but the majority have
-                                            suffered alteration in some form, by injected humour "</p>
-                                    </div>
-
-                                    <ul class="list-unstyled ps-4 ps-md-5 sub-comment">
-                                        <li class="mt-4">
-                                            <div class="d-flex justify-content-between">
-                                                <div class="media align-items-center">
-                                                    <a class="pr-3" href="#">
-                                                        <img src="images/client/01.jpg"
-                                                            class="img-fluid avatar avatar-md-sm rounded-circle shadow img-thumbnail"
-                                                            alt="img">
-                                                    </a>
-                                                    <div class="commentor-detail">
-                                                        <h6 class="mb-0"><a href="javascript:void(0)"
-                                                                class="text-dark media-heading">Lorenzo Peterson</a>
-                                                        </h6>
-                                                        <small class="text-muted">17th August, 2019 at 01:25 pm</small>
-                                                    </div>
-                                                </div>
-                                                <a href="#" class="text-muted"><i class="mdi mdi-reply"></i> Reply</a>
-                                            </div>
-                                            <div class="mt-3">
-                                                <p class="text-muted font-italic p-3 bg-light rounded">" There are many
-                                                    variations of passages of Lorem Ipsum available, but the majority
-                                                    have suffered alteration in some form, by injected humour "</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Leave A Comment -->
-                    <div class="card shadow rounded border-0 mt-4">
-                        <div class="card-body">
-                            <h5 class="card-title mb-0">Leave A Comment :</h5>
-
-                            <form class="mt-3">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group position-relative">
-                                            <label>Your Comment</label>
-                                            <i data-feather="message-circle" class="fea icon-sm icons"></i>
-                                            <textarea id="message" placeholder="Your Comment" rows="5" name="message"
-                                                class="form-control ps-5" required=""></textarea>
-                                        </div>
-                                    </div>
-                                    <!--end col-->
-
-                                    <div class="col-lg-6">
-                                        <div class="form-group position-relative">
-                                            <label>Name <span class="text-danger">*</span></label>
-                                            <i data-feather="user" class="fea icon-sm icons"></i>
-                                            <input id="name" name="name" type="text" placeholder="Name"
-                                                class="form-control ps-5" required="">
-                                        </div>
-                                    </div>
-                                    <!--end col-->
-
-                                    <div class="col-lg-6">
-                                        <div class="form-group position-relative">
-                                            <label>Your Email <span class="text-danger">*</span></label>
-                                            <i data-feather="mail" class="fea icon-sm icons"></i>
-                                            <input id="email" type="email" placeholder="Email" name="email"
-                                                class="form-control ps-5" required="">
-                                        </div>
-                                    </div>
-                                    <!--end col-->
-
-                                    <div class="col-md-12">
-                                        <div class="send">
-                                            <button type="submit" class="btn btn-primary">Send Message</button>
-                                        </div>
-                                    </div>
-                                    <!--end col-->
-                                </div>
-                                <!--end row-->
-                            </form>
-                            <!--end form-->
-                        </div>
-                    </div>
+                            <a href="#leave-comment" class="text-muted"
+                              ><i class="mdi mdi-reply"></i> Reply</a
+                            >
+                          </div>
+                          <div class="mt-3">
+                            <p
+                              class="text-muted font-italic p-3 bg-light rounded"
+                            >
+                              "Agreed—keeping permission checks close to
+                              controllers reduces surprises."
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
-                <!-- Blog End -->
+              </div>
 
-                <!-- START SIDEBAR -->
-                <div class="col-lg-4 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    <div class="sticky-sidebar">
-                        <img src="images/blog/blog-details.jpg" class="img-fluid rounded d-block" alt="image">
-                        <img src="images/blog/06.jpg" class="img-fluid rounded mt-4" alt="image">
+              <!-- Leave A Comment -->
+              <div class="card shadow rounded border-0 mt-4" id="leave-comment">
+                <div class="card-body">
+                  <h5 class="card-title mb-0">Leave A Comment :</h5>
+
+                  <form class="mt-3">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group position-relative">
+                          <label>Your Comment</label>
+                          <i
+                            data-feather="message-circle"
+                            class="fea icon-sm icons"
+                          ></i>
+                          <textarea
+                            id="message"
+                            placeholder="Your Comment"
+                            rows="5"
+                            name="message"
+                            class="form-control ps-5"
+                            required=""
+                          ></textarea>
+                        </div>
+                      </div>
+                      <!--end col-->
+
+                      <div class="col-lg-6">
+                        <div class="form-group position-relative">
+                          <label>Name <span class="text-danger">*</span></label>
+                          <i data-feather="user" class="fea icon-sm icons"></i>
+                          <input
+                            id="name"
+                            name="name"
+                            type="text"
+                            placeholder="Name"
+                            class="form-control ps-5"
+                            required=""
+                          />
+                        </div>
+                      </div>
+                      <!--end col-->
+
+                      <div class="col-lg-6">
+                        <div class="form-group position-relative">
+                          <label
+                            >Your Email
+                            <span class="text-danger">*</span></label
+                          >
+                          <i data-feather="mail" class="fea icon-sm icons"></i>
+                          <input
+                            id="email"
+                            type="email"
+                            placeholder="Email"
+                            name="email"
+                            class="form-control ps-5"
+                            required=""
+                          />
+                        </div>
+                      </div>
+                      <!--end col-->
+
+                      <div class="col-md-12">
+                        <div class="send">
+                          <a class="rk-pill rk-pill-action" href="#contact">
+                            <span>Send via Email</span
+                            ><span class="rk-arrow" aria-hidden="true">→</span>
+                          </a>
+                        </div>
+                      </div>
+                      <!--end col-->
                     </div>
+                    <!--end row-->
+                  </form>
+                  <!--end form-->
                 </div>
-                <!--end col-->
-                <!-- END SIDEBAR -->
-
+              </div>
+              </div>
+              <!-- /Comment section hidden -->
             </div>
-            <!--end row-->
+            <!-- Blog End -->
+
+            <!-- START SIDEBAR -->
+            <div class="col-lg-4 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+              <div class="sticky-sidebar">
+                <img
+                  src="images/poll-management-system/dashboard.svg"
+                  class="img-fluid rounded d-block"
+                  alt="image"
+                />
+                <img
+                  src="images/julius-influencer-platform/campaign-dashboard.svg"
+                  class="img-fluid rounded mt-4"
+                  alt="image"
+                />
+              </div>
+            </div>
+            <!--end col-->
+            <!-- END SIDEBAR -->
+          </div>
+          <!--end row-->
         </div>
         <!--end container-->
-    </section>
+      </section>
+    </main>
 
     <!-- Footer Start -->
-    <footer class="footer bg-dark">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <a href="javascript:void(0)" class="footer-logo text-light">Thank You &#128513</a>
-                    <!-- <p class="para-desc mx-auto mt-5 text-light">I'm a Web Developer. Experienced with all stages of the development cycle for dynamic web projects.</p> -->
-                    <ul class="list-unstyled mb-0 mt-4 social-icon">
-                        <li class="list-inline-item me-1"><a href="https://www.linkedin.com/in/itsrkator" class="rounded-circle white-border" target="_blank"><i class="mdi mdi-linkedin text-light"></i></a></li>
-                        <li class="list-inline-item me-1"><a href="https://www.github.com/itsrkator" class="rounded-circle white-border" target="_blank"><i class="mdi mdi-github-circle text-light"></i></a></li>
-                        <li class="list-inline-item me-1"><a href="https://join.skype.com/invite/UZrUbhWkj8Td" class="rounded-circle white-border" target="_blank"><i class="mdi mdi-skype text-light"></i></a></li>
-                        <li class="list-inline-item me-1"><a href="https://www.facebook.com/itsrkator" class="rounded-circle white-border" target="_blank"><i class="mdi mdi-facebook text-light"></i></a></li>
-                        <li class="list-inline-item me-1"><a href="https://www.twitter.com/itsrkator" class="rounded-circle white-border" target="_blank"><i class="mdi mdi-twitter text-light"></i></a></li>
-                        <li class="list-inline-item me-1"><a href="https://www.instagram.com/itsrkator" class="rounded-circle white-border" target="_blank"><i class="mdi mdi-instagram text-light"></i></a></li>
-                        <!-- <li class="list-inline-item me-1"><a href="javascript:void(0)" class="rounded-circle white-border" target="_blank"><i class="mdi mdi-google-plus"></i></a></li> -->
-                    </ul>
-                </div>
-                <!--end col-->
+    <footer class="rk-site-footer" id="footer">
+      <div class="container">
+        <div class="rk-footer-grid">
+          <div class="rk-footer-card">
+            <div class="rk-footer-kicker">.../CONTACT...</div>
+            <div class="rk-footer-links-title">Links</div>
+            <div class="rk-footer-links">
+              <a href="index.html#home">Main</a>
+              <a href="index.html#about">About</a>
+              <a href="page-portfolio.html">Projects</a>
+              <a href="page-skills.html">Skills</a>
+              <a href="page-hobbies.html">Hobbies</a>
+              <a href="page-profiles.html">Profiles</a>
+              <a href="page-blog.html" aria-current="page">Articles</a>
+              <a href="index.html#contact">Contact</a>
             </div>
-            <!--end row-->
+            <div class="rk-footer-site">
+              <div class="rk-footer-site-title">Site</div>
+              <div class="rk-footer-site-text">
+                Senior Full-Stack Software Engineer • Node.js/TypeScript •
+                Microservices • AWS/GCP.
+              </div>
+            </div>
+          </div>
+
+          <div class="rk-footer-name">
+            <div class="rk-footer-big">Rohitash</div>
+            <div class="rk-footer-big">Kator</div>
+            <div class="rk-footer-role">Full-stack developer</div>
+            <div class="rk-footer-socials">
+              <a class="rk-pill" href="https://github.com/itsrkator" target="_blank" rel="noreferrer"><img class="rk-pill-icon" src="images/skills/github/github-original.svg" alt="" aria-hidden="true" loading="lazy" /><span>GitHub</span></a>
+              <a class="rk-pill" href="https://www.linkedin.com/in/itsrkator" target="_blank" rel="noreferrer"><img class="rk-pill-icon" src="images/skills/linkedin/linkedin-plain.svg" alt="" aria-hidden="true" loading="lazy" /><span>LinkedIn</span></a>
+              <a class="rk-pill" href="https://x.com/itsrkator" target="_blank" rel="noreferrer"><img class="rk-pill-icon" src="images/skills/twitter/twitter-original.svg" alt="" aria-hidden="true" loading="lazy" /><span>X</span></a>
+              <a class="rk-pill" href="https://www.facebook.com/itsrkator" target="_blank" rel="noreferrer"><img class="rk-pill-icon" src="images/skills/facebook/facebook-plain.svg" alt="" aria-hidden="true" loading="lazy" /><span>Facebook</span></a>
+              <a class="rk-pill" href="https://www.instagram.com/itsrkator/" target="_blank" rel="noreferrer"><img class="rk-pill-icon" src="images/skills/instagram/instagram-plain.svg" alt="" aria-hidden="true" loading="lazy" /><span>Instagram</span></a>
+              <a class="rk-pill" href="https://leetcode.com/u/itsrkator/" target="_blank" rel="noreferrer"><img class="rk-pill-icon" src="images/skills/leetcode/leetcode-plain.svg" alt="" aria-hidden="true" loading="lazy" /><span>LeetCode</span></a>
+              <a class="rk-pill" href="https://medium.com/@itsrkator" target="_blank" rel="noreferrer"><i class="mdi mdi-medium" aria-hidden="true"></i><span>Medium</span></a>
+              <a class="rk-pill" href="https://www.youtube.com/@itsrkator" target="_blank" rel="noreferrer"><i class="mdi mdi-youtube" aria-hidden="true"></i><span>YouTube</span></a>
+            </div>
+          </div>
         </div>
-        <!--end container-->
+      </div>
     </footer>
-    <!--end footer-->
-    <footer class="footer footer-bar bg-black">
-        <div class="container text-foot text-center">
-            <p class="mb-0 text-white-50">
-                &copy;
-                <script>
-                    document.write(new Date().getFullYear())
-                </script>
-                <a href="javascript:void(0)" class="text-white-50">Rohitash Kator</a>.
-            </p>
-        </div>
-        <!--end container-->
+    <footer class="rk-footer-bar">
+      <div class="container text-center">
+        <p class="mb-0 text-white-50">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Rohitash Kator.
+        </p>
+      </div>
     </footer>
-    <!--end footer-->
     <!-- Footer End -->
 
-    <a href="javascript: void(0);" class="back-to-top btn btn-icon btn-soft-primary" id="back-to-top"
-        onclick="topFunction()">
-        <i data-feather="arrow-up" class="icons"></i>
+    <a
+      href="#top"
+      class="back-to-top btn btn-icon btn-soft-primary"
+      id="back-to-top"
+      aria-label="Back to top"
+    >
+      <i data-feather="arrow-up" class="icons"></i>
     </a>
     <!-- Back to top -->
-
-    <!-- Style switcher -->
-    <div id="style-switcher" class="bg-light border p-3 pt-2 pb-2" onclick="toggleSwitcher()">
-        <div>
-            <h6 class="color-scheme-title text-center font-weight-bolder mb-2">Select your color</h6>
-            <ul class="pattern text-center mb-0">
-                <li class="list-inline-item">
-                    <a class="default" href="javascript: void(0);" onclick="setColor('default')"></a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="blue" href="javascript: void(0);" onclick="setColor('red')"></a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="green" href="javascript: void(0);" onclick="setColor('green')"></a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="mosaic-blue" href="javascript: void(0);" onclick="setColor('mosaic-blue')"></a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="light-yellow" href="javascript: void(0);" onclick="setColor('light-yellow')"></a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="purple" href="javascript: void(0);" onclick="setColor('purple')"></a>
-                </li>
-            </ul>
-            <div class="bottom">
-                <a href="javascript: void(0);" class="settings bg-white shadow d-block"><i
-                        class="mdi mdi-settings mdi-24px position-absolute mdi-spin text-primary"></i></a>
-            </div>
-        </div>
-    </div>
-    <!-- end Style switcher -->
-
 
     <!-- Javascript -->
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -428,12 +601,8 @@
     <!-- Feather icon -->
     <script src="js/feather.min.js"></script>
 
-    <!-- Switcher -->
-    <script src="js/switcher.js"></script>
-
     <!-- Main Js -->
     <script src="js/app.js"></script>
-
-</body>
-
+    <script src="js/rk-modern.js?v=20260128-15"></script>
+  </body>
 </html>
