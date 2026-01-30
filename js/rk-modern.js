@@ -76,85 +76,99 @@
     });
   }
 
+  var DEFAULT_CONTACT_ENDPOINT = 'https://itsrkator-fa8t.onrender.com/';
+
   function initContactForm() {
-    var form =
-      document.getElementById('rk-contact-form') ||
-      document.getElementById('contact-form');
-    if (!form) return;
+    var forms = document.querySelectorAll(
+      '#rk-contact-form, #contact-form, form[name="contact-form"]'
+    );
+    if (!forms.length) return;
 
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
+    function attachHandler(form) {
+      var statusEl = qs('#rk-form-status, #error-msg', form);
 
-      var statusEl =
-        document.getElementById('rk-form-status') ||
-        document.getElementById('error-msg');
       function setStatus(msg) {
         if (!statusEl) return;
         statusEl.textContent = msg || '';
         if (statusEl.style) statusEl.style.opacity = msg ? '1' : '0';
       }
 
-      var name = (qs("[name='name']", form) || {}).value || '';
-      var email = (qs("[name='email']", form) || {}).value || '';
-      var subject =
-        (qs("[name='subject']", form) || {}).value || 'Portfolio contact';
-      var message = (qs("[name='message']", form) || {}).value || '';
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-      var endpoint = form.getAttribute('data-api-endpoint') || '';
-      var endpointIsConfigured =
-        endpoint &&
-        endpoint.indexOf('yourFormId') === -1 &&
-        endpoint.indexOf('example') === -1;
+        var name = ((qs("[name='name']", form) || {}).value || '').trim();
+        var email = ((qs("[name='email']", form) || {}).value || '').trim();
+        var subject =
+          ((qs("[name='subject']", form) || {}).value || 'Portfolio contact').trim();
+        var message = ((qs("[name='message']", form) || {}).value || '').trim();
 
-      function openMailto() {
-        var body = [
-          'Hi Rohitash,',
-          '',
-          message.trim(),
-          '',
-          '—',
-          'From: ' + (name.trim() || 'Anonymous'),
-          email.trim() ? 'Email: ' + email.trim() : '',
-        ]
-          .filter(Boolean)
-          .join('\n');
+        if (!name) {
+          setStatus('Please enter your name.');
+          return;
+        }
+        if (!email) {
+          setStatus('Please enter your email.');
+          return;
+        }
+        if (!message) {
+          setStatus('Please enter a message.');
+          return;
+        }
 
-        setStatus('Please use the form below to get in touch.');
-        var contactEl = document.getElementById('contact');
-        if (contactEl) contactEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+        var endpoint =
+          form.getAttribute('data-api-endpoint') || DEFAULT_CONTACT_ENDPOINT;
+        var endpointIsConfigured =
+          endpoint &&
+          endpoint.indexOf('yourFormId') === -1 &&
+          endpoint.indexOf('example') === -1;
 
-      if (endpointIsConfigured && window.fetch) {
-        setStatus('Sending…');
-        fetch(endpoint, {
-          method: 'POST',
-          headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            name: name.trim(),
-            email: email.trim(),
-            subject: subject.trim(),
-            message: message.trim(),
-            page: window.location.href,
-          }),
-        })
-          .then(function (res) {
-            if (!res.ok) throw new Error('Request failed');
-            setStatus('Message sent. Thanks!');
-            form.reset();
+        function openMailto() {
+          setStatus('Opening email client…');
+          var contactEl = document.getElementById('contact');
+          if (contactEl) contactEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        if (endpointIsConfigured && window.fetch) {
+          setStatus('Sending…');
+          fetch(endpoint, {
+            method: 'POST',
+            headers: {
+              Accept: 'application/json',
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              name: name,
+              email: email,
+              subject: subject,
+              message: message,
+              page: window.location.href,
+            }),
           })
-          .catch(function () {
-            setStatus('Could not send via API. Opening email client…');
-            openMailto();
-          });
-        return;
-      }
+            .then(function (res) {
+              return res.text().then(function (text) {
+                if (!res.ok) throw new Error('Request failed');
+                return text;
+              });
+            })
+            .then(function (text) {
+              if (String(text).trim() === 'Success') {
+                setStatus('Message sent. Thanks!');
+                form.reset();
+              } else {
+                setStatus('Something went wrong. Please try again.');
+              }
+            })
+            .catch(function () {
+              setStatus('Could not send. Please try again later.');
+            });
+          return;
+        }
 
-      setStatus('Opening email client…');
-      openMailto();
-    });
+        openMailto();
+      });
+    }
+
+    for (var i = 0; i < forms.length; i++) attachHandler(forms[i]);
   }
 
   function initMediaModal() {

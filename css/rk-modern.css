@@ -651,7 +651,7 @@ body.rk-modern h6,
 }
 
 .rk-behance-hero {
-  --rk-hero-bg-image: url("../images/hero-bg.jpeg");
+  --rk-hero-bg-image: url("../images/hero-bg.jpg");
   width: 100%;
   height: clamp(520px, 72vh, 860px);
   margin-left: auto;
