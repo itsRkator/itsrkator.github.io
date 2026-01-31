@@ -80,7 +80,7 @@
 
   function initContactForm() {
     var forms = document.querySelectorAll(
-      '#rk-contact-form, #contact-form, form[name="contact-form"]'
+      '#rk-contact-form, #contact-form, form[name="contact-form"]',
     );
     if (!forms.length) return;
 
@@ -98,8 +98,9 @@
 
         var name = ((qs("[name='name']", form) || {}).value || '').trim();
         var email = ((qs("[name='email']", form) || {}).value || '').trim();
-        var subject =
-          ((qs("[name='subject']", form) || {}).value || 'Portfolio contact').trim();
+        var subject = (
+          (qs("[name='subject']", form) || {}).value || 'Portfolio contact'
+        ).trim();
         var message = ((qs("[name='message']", form) || {}).value || '').trim();
 
         if (!name) {
@@ -121,12 +122,6 @@
           endpoint &&
           endpoint.indexOf('yourFormId') === -1 &&
           endpoint.indexOf('example') === -1;
-
-        function openMailto() {
-          setStatus('Opening email client…');
-          var contactEl = document.getElementById('contact');
-          if (contactEl) contactEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
 
         if (endpointIsConfigured && window.fetch) {
           setStatus('Sending…');
@@ -161,10 +156,9 @@
             .catch(function () {
               setStatus('Could not send. Please try again later.');
             });
-          return;
+        } else {
+          setStatus('Something went wrong. Please try again later.');
         }
-
-        openMailto();
       });
     }
 
@@ -188,10 +182,14 @@
 
       var href = (a.getAttribute('href') || '').trim();
       var dataSrc = (a.getAttribute('data-src') || '').trim();
-      var src = href && href !== '#' && href.indexOf('#') !== 0
-        ? href
-        : dataSrc.replace(/^\.\//, '');
-      var title = a.getAttribute('data-rk-title') || a.getAttribute('title') || 'Certificate';
+      var src =
+        href && href !== '#' && href.indexOf('#') !== 0
+          ? href
+          : dataSrc.replace(/^\.\//, '');
+      var title =
+        a.getAttribute('data-rk-title') ||
+        a.getAttribute('title') ||
+        'Certificate';
       if (!src) return;
 
       e.preventDefault();
