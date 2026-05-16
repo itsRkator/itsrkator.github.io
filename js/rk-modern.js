@@ -377,7 +377,7 @@
 
     var PROJECTS = {
       poll: {
-        title: 'Poll Management System (Internal / POC)',
+        title: 'Poll Management System (Internal)',
         summary:
           'Production-grade poll platform with dynamic questions, role-based access, real-time reporting, and analytics visualizations.',
         bullets: [
@@ -401,7 +401,7 @@
           ['Company', 'Talentica Software'],
           ['Role', 'Software Engineer'],
           ['Timeline', 'Nov 2024 - Present (Remote)'],
-          ['Type', 'Internal / POC'],
+          ['Type', 'Internal'],
         ],
         images: [
           'images/poll-management-system/dashboard.svg',
@@ -446,7 +446,7 @@
         ],
       },
       chat: {
-        title: 'Real-Time Chat Application (Internal / POC)',
+        title: 'Real-Time Chat Application (Internal)',
         summary:
           'Full-stack real-time chat with JWT auth, rooms, presence, typing indicators, and message state tracking over WebSockets.',
         bullets: [
@@ -469,7 +469,7 @@
           ['Company', 'Talentica Software'],
           ['Role', 'Software Engineer'],
           ['Timeline', 'Nov 2024 - Present (Remote)'],
-          ['Type', 'Internal / POC'],
+          ['Type', 'Internal'],
         ],
         images: [
           'images/real-time-chat-app/chat-rooms.svg',
@@ -667,7 +667,7 @@
         title: 'RBAC + poll workflows with Node.js & Express',
         image: 'images/poll-management-system/rbac.svg',
         excerpt:
-          'In the Poll Management System (Internal / POC), the goal was simple: ship secure and scalable APIs for poll lifecycles (create, publish, vote, close) while keeping authorization predictable and auditable.',
+          'In the Poll Management System (Internal), the goal was simple: ship secure and scalable APIs for poll lifecycles (create, publish, vote, close) while keeping authorization predictable and auditable.',
       },
       phyllo: {
         title: 'Reliable ingestion: Instagram Stories via Phyllo',
